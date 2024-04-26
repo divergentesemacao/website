@@ -14,15 +14,64 @@
     <title>Divergentes em Ação</title>
 
     <!-- Branch: Miguel Moroni -->
+
+    <style>
+      /* Estilização do menu secundário */
+      .submenu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          width: 12rem;
+          background-color: #4b5563;
+          padding: 2rem;
+          z-index: 50;
+      }
+      details[open] .submenu {
+          display: block;
+      }
+
+      .bullets {
+          margin-top: 1rem;
+      }
+
+      .bullet {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          margin: 0 0.5rem;
+          border-radius: 50%;
+          cursor: pointer;
+      }
+    </style>
   </head>
-  <body>
+  <body class="bg-gray-100">
     <!--<div id="comp-menu"></div>-->
     
     <!-- Menu fixo -->
     <nav class="fixed w-full bg-gray-800 text-white p-4 z-50">
       <div class="container mx-auto flex justify-between items-center">
           <a href="#" class="text-white font-bold text-lg">Divergentes em Ação</a>
-          <ul class="flex space-x-4">
+          <details class="lg:hidden">
+              <summary class="block">
+                  <!-- Ícone de menu sanduíche -->
+                  <div class="block h-6 w-6">
+                      <div class="w-full h-1 bg-white mb-1"></div>
+                      <div class="w-full h-1 bg-white mb-1"></div>
+                      <div class="w-full h-1 bg-white"></div>
+                  </div>
+              </summary>
+              <div class="submenu">
+                  <ul>
+                      <li><a href="#inicio" class="block mb-4 hover:text-gray-300">Inicio</a></li>
+                      <li><a href="#sobre" class="block mb-4 hover:text-gray-300">O TDAH</a></li>
+                      <li><a href="#jovem" class="block mb-4 hover:text-gray-300">Jovem</a></li>
+                      <li><a href="#rh" class="block mb-4 hover:text-gray-300">RH</a></li>
+                      <li><a href="#gestor" class="block hover:text-gray-300">Gestor</a></li>
+                  </ul>
+              </div>
+          </details>
+          <ul class="hidden lg:flex space-x-4">
               <li><a href="#inicio" class="hover:text-gray-300">Inicio</a></li>
               <li><a href="#sobre" class="hover:text-gray-300">O TDAH</a></li>
               <li><a href="#jovem" class="hover:text-gray-300">Jovem</a></li>
@@ -33,18 +82,42 @@
     </nav>
 
     <!-- Area de Trabalho -->
-    <main>
+    <main class="grid justify-center items-center h-screen min-h-screen mb-80">
       <br><br><br>
       <!-- Apresentação do Projeto -->
       <!-- Busque abordar o design visando um publico geral, que o faça querer descer e ver mais do site -->
-      <section id="inicio">
-        <h1 class="bg-red-600">Hello World</h1>
+      <section id="inicio" class="flex flex-col">
+        <div>
+          <div class="frame h-64 bg-gray-200 mb-4" id="frame">
+            <h1 class="text-3xl font-bold mb-8 text-center">Compreendendo o TDAH</h1>
+              <!-- Conteúdo do quadro aqui -->
+          </div>
+          <div class="bullets text-center">
+              <span class="bullet bg-gray-600" onclick="changeColor(0)"></span>
+              <span class="bullet bg-gray-400" onclick="changeColor(1)"></span>
+              <span class="bullet bg-gray-400" onclick="changeColor(2)"></span>
+          </div>
+        </div>
       </section>
       
       <!-- Informativo sobre o TDAH -->
       <!-- Busque abordar o design visando um publico geral -->
-      <section id="sobre">
-        <h1 class="bg-blue-600">Hello World</h1>
+      <section id="sobre" class="flex flex-col">
+        <div class="">
+          <h1 class="text-3xl font-bold mb-8 text-center">Compreendendo o TDAH</h1>
+          
+          <!-- Botões para selecionar os fragmentos -->
+          <div class="flex space-x-4 flex-row">
+              <button onclick="loadFragment('sobre1')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-7 basis-1/3 rounded">Origem</button>
+              <button onclick="loadFragment('sobre2')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-7 basis-1/3 rounded">Sintomas</button>
+              <button onclick="loadFragment('sobre3')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-7 basis-1/3 rounded">Habilidades</button>
+          </div>
+        </div>
+        
+        <!-- Local para carregar os fragmentos -->
+        <div class="border border-gray-300 mt-8 mb-8 max-h-80 overflow-y-auto shadow-md p-8 rounded-lg" style="width: 500px;">
+          <div id="fragment-container"></div>
+        </div>
       </section>
 
       <!-- Sobre o Jovem com TDAH -->
@@ -75,5 +148,6 @@
     </footer>
 
   <script type="module" src="main.js"></script>
+  <script src="js/script.js"></script>
   </body>
 </html>
