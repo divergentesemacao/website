@@ -41,4 +41,4 @@ function nextColor() {
     updateBullets();
 }
 
-setInterval(nextColor, x); // Alterna entre as cores a cada 5 segundos
+setInterval(nextColor, 5000); // Alterna entre as cores a cada 5 segundos.
