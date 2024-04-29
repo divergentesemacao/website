@@ -1,5 +1,4 @@
 //Organizador de Fragmentos de Texto
-
 async function loadFragment(fragmentId) {
     try {
         const response = await fetch(`../src/frag/${fragmentId}.html`);
@@ -11,7 +10,6 @@ async function loadFragment(fragmentId) {
 }
 
 //Carousel
-
 const frame = document.getElementById('frame');
 const bullets = document.querySelectorAll('.bullet');
 let currentIndex = 0;
@@ -42,3 +40,14 @@ function nextColor() {
 }
 
 setInterval(nextColor, 5000); // Alterna entre as cores a cada 5 segundos.
+
+// Fecha o submenu quando clicar fora
+document.addEventListener('click', function(event) {
+    const details = document.querySelector('details');
+    const isClickInside = details.contains(event.target);
+
+    if (!isClickInside) {
+        // Fecha o menu
+        details.removeAttribute('open');
+    }
+});
