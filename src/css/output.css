@@ -558,33 +558,21 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 300px) {
   .container {
-    max-width: 640px;
+    max-width: 300px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .container {
-    max-width: 768px;
+    max-width: 400px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 500px) {
   .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
+    max-width: 500px;
   }
 }
 
@@ -604,9 +592,13 @@ video {
   z-index: 50;
 }
 
-.mx-96 {
-  margin-left: 24rem;
-  margin-right: 24rem;
+.z-20 {
+  z-index: 20;
+}
+
+.mx-80 {
+  margin-left: 20rem;
+  margin-right: 20rem;
 }
 
 .mx-auto {
@@ -618,16 +610,16 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.mb-80 {
-  margin-bottom: 20rem;
 }
 
 .mt-20 {
@@ -640,6 +632,18 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-80 {
+  margin-bottom: 20rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
 }
 
 .block {
@@ -791,6 +795,24 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -830,12 +852,47 @@ video {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1024px) {
-  .lg\:flex {
-    display: flex;
+@media (min-width: 300px) {
+  .xa\:mx-3 {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 
-  .lg\:hidden {
-    display: none;
+  .xa\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .xa\:p-1 {
+    padding: 0.25rem;
+  }
+
+  .xa\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .xb\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .xb\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .xb\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .xs\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
   }
 }
