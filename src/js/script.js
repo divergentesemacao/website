@@ -1,7 +1,7 @@
 //Organizador de Fragmentos de Texto
 async function loadFragment(fragmentId) {
     try {
-        const response = await fetch(`../src/frag/${fragmentId}.html`);
+        const response = await fetch(`../frag/${fragmentId}.html`);
         const html = await response.text();
         document.getElementById('fragment-container').innerHTML = html;
     } catch (error) {
