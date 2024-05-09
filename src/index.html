@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt">
+<html lang="pt" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./images/vite.svg" />
@@ -53,7 +53,7 @@
     <nav class="fixed w-full bg-gray-800 text-white p-4 z-50">
       <div class="container mx-auto flex justify-between items-center">
         <a href="#" class="text-white font-bold text-lg">Divergentes em Ação</a>
-        <details class="lg:hidden">
+        <details class="md:hidden">
           <summary class="block">
             <!-- Ícone de menu sanduíche -->
             <div class="block h-6 w-6">
@@ -65,85 +65,166 @@
           <div class="submenu">
             <ul>
               <li><a href="#inicio" class="block mb-4 hover:text-gray-300">Inicio</a></li>
-              <li><a href="#sobre" class="block mb-4 hover:text-gray-300">O TDAH</a></li>
-              <li><a href="#jovem" class="block mb-4 hover:text-gray-300">Jovem</a></li>
-              <li><a href="#rh" class="block mb-4 hover:text-gray-300">RH</a></li>
-              <li><a href="#gestor" class="block hover:text-gray-300">Gestor</a></li>
+              <li><a href="#sobre" class="block mb-4 hover:text-gray-300">O Projeto</a></li>
+              <li><a href="#entender" class="block mb-4 hover:text-gray-300">Entender</a></li>
+              <li><a href="#pesquisa" class="block hover:text-gray-300">Pesquisa</a></li>
             </ul>
           </div>
         </details>
-        <ul class="hidden lg:flex space-x-4">
+        <ul class="hidden md:flex space-x-4">
           <li><a href="#inicio" class="hover:text-gray-300">Inicio</a></li>
-          <li><a href="#sobre" class="hover:text-gray-300">O TDAH</a></li>
-          <li><a href="#jovem" class="hover:text-gray-300">Jovem</a></li>
-          <li><a href="#rh" class="hover:text-gray-300">RH</a></li>
-          <li><a href="#gestor" class="hover:text-gray-300">Gestor</a></li>
+          <li><a href="#sobre" class="hover:text-gray-300">O Projeto</a></li>
+          <li><a href="#entender" class="hover:text-gray-300">Entender</a></li>
+          <li><a href="#pesquisa" class="hover:text-gray-300">Pesquisa</a></li>
         </ul>
       </div>
     </nav>
 
     <!-- Area de Trabalho -->
-    <main class="justify-center items-center mb-80 lg:mx-64 md:mx-30 sm:mx-20 mx-6">
-      
-      <!-- Apresentação do Projeto -->
-      <!-- Busque abordar o design visando um publico geral, que o faça querer descer e ver mais do site -->
-      <section id="inicio" class="flex flex-col">
-        <div class="mt-20">
-          <div class="frame h-64 bg-gray-200 mb-4" id="frame">
-              <!-- Conteúdo do quadro aqui -->
+    <main class="justify-center items-center mb-80 mx-6 flex">
+      <div class="grow"></div>
+
+      <div class="flex-none 2xl:w-4/12 xl:w-6/12 lg:w-8/12 md:w-9/12 w-11/12">
+
+        <!-- Apresentação do Projeto -->
+        <!-- Busque abordar o design visando um publico geral, que o faça querer descer e ver mais do site -->
+        <section id="inicio" class="flex flex-col">
+          <div class="mt-20">
+            <div class="frame h-64 bg-gray-200 mb-4" id="frame">
+                <!-- Conteúdo do quadro aqui -->
+            </div>
+            <div class="bullets text-center">
+              <span class="bullet bg-gray-600" onclick="changeColor(0)"></span>
+              <span class="bullet bg-gray-400" onclick="changeColor(1)"></span>
+              <span class="bullet bg-gray-400" onclick="changeColor(2)"></span>
+            </div>
           </div>
-          <div class="bullets text-center">
-            <span class="bullet bg-gray-600" onclick="changeColor(0)"></span>
-            <span class="bullet bg-gray-400" onclick="changeColor(1)"></span>
-            <span class="bullet bg-gray-400" onclick="changeColor(2)"></span>
-          </div>
-        </div>
-      </section>
-      
-      <!-- Informativo sobre o TDAH -->
-      <!-- Busque abordar o design visando um publico geral -->
-      <section id="sobre" class="flex flex-col">
-        <div class="mt-20">
-          <h1 class="text-3xl font-bold mb-8 text-center">Compreendendo o TDAH</h1>
-          
-          <!-- Botões para selecionar os fragmentos -->
-          <div class="flex space-x-4 flex-row">
-            <button type="button" onclick="loadFragment('sobre1')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-7 basis-1/3 rounded cursor-pointer">Origem</button>
-            <button type="button" onclick="loadFragment('sobre2')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-7 basis-1/3 rounded cursor-pointer">Sintomas</button>
-            <button type="button" onclick="loadFragment('sobre3')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-7 basis-1/3 rounded cursor-pointer">Habilidades</button>
-          </div>
-        </div>
+        </section>
         
-        <!-- Local para carregar os fragmentos -->
-        <div class="border border-gray-300 mt-8 mb-8 shadow-md p-8 rounded-lg">
-          <div id="fragment-container"></div>
-        </div>
-      </section>
+        <!-- Informativo sobre o TDAH -->
+        <!-- Busque abordar o design visando um publico geral -->
+        <section id="sobre" class="flex flex-col">
+          <div class="mt-20">
+            <h1 class="text-3xl font-bold mb-8 text-center">Empregabilidade ao Jovem com TDAH</h1>
+            
+            <!-- Botões para selecionar os fragmentos -->
+            <div class="flex space-x-4 flex-row">
+              <button type="button" onclick="loadFragment('sobre1')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 basis-1/3 rounded cursor-pointer">Porque ?</button>
+              <button type="button" onclick="loadFragment('sobre2')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 basis-1/3 rounded cursor-pointer">Motivo</button>
+              <button type="button" onclick="loadFragment('sobre3')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 basis-1/3 rounded cursor-pointer">Esperança</button>
+            </div>
+          </div>
+          
+          <!-- Local para carregar os fragmentos -->
+          <div class="border border-gray-300 mt-8 mb-8 shadow-md p-8 rounded-lg">
+            <div id="fragment-container"></div>
+          </div>
+        </section>
 
-      <!-- Sobre o Jovem com TDAH -->
-      <!-- Busque abordar o design visando um publico jovem de Ti -->
-      <section id="jovem" class="flex flex-col">
-        <h2>O Jovem</h2>
-        <h3>Desafios</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quam odit eius modi asperiores excepturi est expedita voluptatem, omnis sunt sit culpa alias cupiditate, eligendi, consequatur quaerat saepe qui porro!</p>
-        <h3>Dicas</h3>
-        <p>Algumas dicas para pessoas com TDAH lidarem com o trabalho e aumentarem sua produtividade.</p>
-      </section>
+        <section id="entender">
+          <div class="mt-20"></div>
+            <h1 class="text-3xl font-bold mb-8 text-center">Os lados desta Questão</h1>
 
-      <!-- Sobre o RH tradicional -->
-      <!-- Busque abordar o design visando um publico empresarial, mas que pode ter um toque artistico -->
-      <section id="rh" class="flex flex-col">
-        <h2>O RH</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cupiditate et, fugiat, tempore odio quidem deleniti dolorum atque ipsa ut cumque vitae libero, nisi dignissimos omnis quaerat obcaecati voluptatibus possimus?</p>
-        <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id qui culpa optio neque vitae quasi minima cum? Eius magnam ullam soluta, quia consequuntur quos incidunt? Quisquam delectus fuga inventore perferendis.</span><span>Tempora praesentium optio reprehenderit. Inventore quos deserunt obcaecati a corrupti sapiente dignissimos, veritatis harum, et nisi dolores dicta totam nemo vel reiciendis maiores optio nam excepturi sequi, placeat soluta blanditiis.</span><span>Tenetur distinctio, deleniti nisi, facilis pariatur quidem nobis labore itaque praesentium nulla, mollitia dolorem molestiae officia dolorum minima et iure iste illo maiores sunt necessitatibus provident. Non fugiat quidem atque!</span><span>Commodi adipisci, tenetur aut sequi cum aperiam dolore esse modi dolor praesentium natus dolorum saepe nisi voluptatibus expedita officia illum, quis necessitatibus porro, mollitia dicta molestiae nam earum rem! In?</span><span>Quis distinctio iure cum saepe vero illum non perspiciatis fuga repudiandae dolorum maxime vel, pariatur iste neque nulla labore. Praesentium ad dicta laborum repellendus, sed culpa itaque magni ipsam facilis.</span><span>Earum voluptate incidunt repudiandae ipsum possimus? Nostrum fugiat doloremque consequatur mollitia assumenda accusamus harum ea? Modi itaque et facere sequi blanditiis commodi minus officia esse recusandae nulla enim, cum perferendis?</span><span>Veritatis eaque laudantium quidem et, vitae impedit minus aliquam sed adipisci odio corrupti esse blanditiis quo ut cum, neque deleniti numquam ea. Illo eum velit error nulla eligendi, reprehenderit eos.</span></p>
-      </section>
+            <p class="text-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda optio vitae possimus inventore dolores eum eius ipsa sunt quae ullam necessitatibus deleniti placeat sapiente, sint aliquid reprehenderit autem eaque molestias.</p>
 
-      <!-- Sobre o Gestor -->
-      <!-- Busque abordar o design visando um publico empresarial mais sério -->
-      <section id="gestor">
-        <h2>O Gestor</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi explicabo repellat perspiciatis vel aliquid tenetur? Suscipit ut explicabo magnam necessitatibus veritatis qui voluptas, at reprehenderit, quia excepturi modi tenetur ducimus?</p>
-      </section>
+            <div class="mt-10"></div>
+            <div class="mx-auto flex flex-wrap justify-center">
+              <div class="p-2 relative">
+                <div class="border border-gray-200 rounded-lg shadow-lg">
+                  <!-- Trilha 1 -->
+                  <a href="#jovem"><img src="" alt="" class="bg-lime-600 md:w-56 md:h-96 md:m-3 w-44 h-72 m-3"></a>
+                </div>
+              </div>
+              <div class="p-2 relative">
+                <div class="mx-auto border border-gray-200 rounded-lg shadow-lg">
+                  <!-- Trilha 2 -->
+                  <a href="#rh"><img src="" alt="" class="bg-orange-600 md:w-56 md:h-96 md:m-3 w-44 h-72 m-3"></a>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!--Q1-->
+        <section id="jovem" class="flex flex-col">
+          <div class="mt-20">
+          <h1 class="text-3xl font-bold mb-8 text-center">Desafios do Jovem TDAH</h1>
+
+          <p class="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima vero exercitationem ipsam asperiores dolorum fuga nostrum, magnam temporibus reprehenderit corrupti nam possimus quidem dolor quos ab numquam? Voluptatum, nam expedita.</p>
+
+          <div class="mt-10"></div>
+          <h2 class="text-2xl font-bold mb-8 text-center">Desafios</h2>
+
+          <div class="mx-auto flex flex-wrap justify-center">
+            <div class="p-2 relative">
+              <div class="border border-gray-200 rounded-lg shadow-lg">
+                <!-- Vídeo 1 -->
+                <iframe id="video1" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="p-2 relative">
+              <div class="mx-auto border border-gray-200 rounded-lg shadow-lg">
+                <!-- Vídeo 2 -->
+                <iframe id="video2" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10"></div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima vero exercitationem ipsam asperiores dolorum fuga nostrum, magnam temporibus reprehenderit corrupti nam possimus quidem dolor quos ab numquam? Voluptatum, nam expedita.</p>
+
+          <div class="mt-10"></div>
+          <h2 class="text-2xl font-bold mb-8 text-center">Habilidades</h2>
+
+          <div class="mx-auto flex flex-wrap justify-center">
+            <div class="p-2 relative">
+              <div class="border border-gray-200 rounded-lg shadow-lg">
+                <!-- Vídeo 1 -->
+                <iframe id="video1" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="p-2 relative">
+              <div class="mx-auto border border-gray-200 rounded-lg shadow-lg">
+                <!-- Vídeo 2 -->
+                <iframe id="video2" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10"></div>
+          <p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos labore harum consequuntur voluptas, atque odit, provident est dolore ea assumenda eveniet non quo nemo ex hic ratione possimus corrupti?</span>
+            <span>Fuga quae asperiores sint, iusto, atque fugit non dolores odit, eligendi praesentium voluptatum animi eveniet nostrum reprehenderit veniam? Ratione, id culpa? Facilis placeat a accusamus veniam hic eveniet magnam nobis.</span>
+          </p>
+
+          </div>
+        </section>
+
+        <!--Q2-->
+        <section id="rh">
+          <div class="mt-20">
+          <h1 class="text-3xl font-bold mb-8 text-center">Os Recursos Humanos</h1>
+          <p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos labore harum consequuntur voluptas, atque odit, provident est dolore ea assumenda eveniet non quo nemo ex hic ratione possimus corrupti?</span>
+            <span>Fuga quae asperiores sint, iusto, atque fugit non dolores odit, eligendi praesentium voluptatum animi eveniet nostrum reprehenderit veniam? Ratione, id culpa? Facilis placeat a accusamus veniam hic eveniet magnam nobis.</span>
+          </p>
+        </section>
+
+        <section id="pesquisa" class="flex flex-col">
+          
+        
+
+        </section>
+
+        <!-- Sobre o Gestor -->
+        <!-- Busque abordar o design visando um publico empresarial mais sério 
+        <section id="gestor">
+          <h2>O Gestor</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi explicabo repellat perspiciatis vel aliquid tenetur? Suscipit ut explicabo magnam necessitatibus veritatis qui voluptas, at reprehenderit, quia excepturi modi tenetur ducimus?</p>
+        </section>
+        -->
+      </div>
+
+      <div class="grow"></div>
     </main>
     <!-- Fim da Area de Trabalho -->
 

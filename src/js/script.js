@@ -39,7 +39,7 @@ function nextColor() {
     updateBullets();
 }
 
-setInterval(nextColor, 5000); // Alterna entre as cores a cada 5 segundos.
+setInterval(nextColor, 15000); // Alterna entre as cores a cada 5 segundos.
 
 // Fecha o submenu quando clicar fora
 document.addEventListener('click', function(event) {
