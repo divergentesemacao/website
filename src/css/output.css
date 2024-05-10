@@ -650,8 +650,8 @@ video {
   margin-bottom: 20rem;
 }
 
-.ml-\[50\%\] {
-  margin-left: 50%;
+.ml-\[100\%\] {
+  margin-left: 100%;
 }
 
 .mt-10 {
@@ -662,16 +662,16 @@ video {
   margin-top: 5rem;
 }
 
+.mt-40 {
+  margin-top: 10rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.ml-\[100\%\] {
-  margin-left: 100%;
 }
 
 .block {
@@ -726,16 +726,8 @@ video {
   width: 1.5rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-full {
   width: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .flex-none {
