@@ -662,10 +662,6 @@ video {
   margin-top: 5rem;
 }
 
-.mt-40 {
-  margin-top: 10rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -945,6 +941,11 @@ video {
 
 .text-lg {
   font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 

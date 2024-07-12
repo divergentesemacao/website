@@ -27,6 +27,7 @@
         padding: 2rem;
         z-index: 50;
       }
+
       details[open] .submenu {
         display: block;
       }
@@ -65,17 +66,19 @@
           <div class="submenu">
             <ul>
               <li><a href="#inicio" class="block mb-4 hover:text-gray-300">Inicio</a></li>
-              <li><a href="#sobre" class="block mb-4 hover:text-gray-300">O Projeto</a></li>
+              <li><a href="#projeto" class="block mb-4 hover:text-gray-300">O Projeto</a></li>
               <li><a href="#entender" class="block mb-4 hover:text-gray-300">Entender</a></li>
-              <li><a href="#pesquisa" class="block hover:text-gray-300">Pesquisa</a></li>
+              <li><a href="#equipe" class="block mb-4 hover:text-gray-300">A Equipe</a></li>
+              <!--<li><a href="#pesquisa" class="block hover:text-gray-300">Pesquisa</a></li>-->
             </ul>
           </div>
         </details>
         <ul class="hidden md:flex space-x-4">
           <li><a href="#inicio" class="hover:text-gray-300">Inicio</a></li>
-          <li><a href="#sobre" class="hover:text-gray-300">O Projeto</a></li>
+          <li><a href="#projeto" class="hover:text-gray-300">O Projeto</a></li>
           <li><a href="#entender" class="hover:text-gray-300">Entender</a></li>
-          <li><a href="#pesquisa" class="hover:text-gray-300">Pesquisa</a></li>
+          <li><a href="#equipe" class="hover:text-gray-300">A Equipe</a></li>
+          <!--<li><a href="#pesquisa" class="hover:text-gray-300">Pesquisa</a></li>-->
         </ul>
       </div>
     </nav>
@@ -101,26 +104,41 @@
           </div>
         </section>
         
-        <!-- Informativo sobre o TDAH -->
-        <section id="sobre" class="flex flex-col">
-          <div class="mt-20">
-            <h1 class="text-3xl font-bold mb-8 text-center">Empregabilidade ao Jovem com TDAH</h1>
-            
-            <!-- Botões para selecionar os fragmentos -->
-            <div class="flex space-x-4 flex-row">
-              <button type="button" onclick="loadFragment('sobre1')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 basis-1/3 rounded cursor-pointer">Porque ?</button>
-              <button type="button" onclick="loadFragment('sobre2')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 basis-1/3 rounded cursor-pointer">Motivo</button>
-              <button type="button" onclick="loadFragment('sobre3')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 basis-1/3 rounded cursor-pointer">Esperança</button>
-            </div>
-          </div>
+        <!-- Apoiadores -->
+        <section>
           
-          <!-- Local para carregar os fragmentos -->
-          <div class="border border-gray-300 mt-8 mb-8 shadow-md p-8 rounded-lg">
-            <div id="fragment-container"></div>
-          </div>
         </section>
 
-        <!--Direcionamento para as Trilhas-->
+        <!-- Informativo sobre o TDAH -->
+        <section>
+          
+        </section>
+
+        
+
+        <!-- Direcionamento para as Trilhas -->
+        <section id="projeto">
+          <div class="mt-20"></div>
+            <h1 class="text-3xl font-bold mb-8 text-center">O Projeto</h1>
+
+            <p class="text-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda optio vitae possimus inventore dolores eum eius ipsa sunt quae ullam necessitatibus deleniti placeat sapiente, sint aliquid reprehenderit autem eaque molestias.</p>
+
+            <div class="mt-10"></div>
+            
+            <div class="mx-auto flex flex-wrap justify-center">
+              <div class="p-2 relative">
+                <div class="border border-gray-200 rounded-lg shadow-lg">
+                  <!-- Vídeo 1 -->
+                  <iframe id="video1" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
+            
+            
+        </section>
+
+        <!-- Direcionamento para as Trilhas -->
         <section id="entender">
           <div class="mt-20"></div>
             <h1 class="text-3xl font-bold mb-8 text-center">Os lados desta Questão</h1>
@@ -144,27 +162,21 @@
             </div>
         </section>
 
-        <!--Trilha do Jovem TDAH-->
+        <!-- Trilha do Jovem TDAH -->
         <section id="jovem" class="flex flex-col">
           <div class="mt-20">
-          <h1 class="text-3xl font-bold mb-8 text-center">Desafios do Jovem TDAH</h1>
+          <h1 class="text-3xl font-bold mb-8 text-center">O Profissional com TDAH</h1>
 
           <p class="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima vero exercitationem ipsam asperiores dolorum fuga nostrum, magnam temporibus reprehenderit corrupti nam possimus quidem dolor quos ab numquam? Voluptatum, nam expedita.</p>
 
           <div class="mt-10"></div>
-          <h2 class="text-2xl font-bold mb-8 text-center">Desafios</h2>
+          <h2 class="text-2xl font-bold mb-8 text-center">Vivendo com o Transtorno</h2>
 
           <div class="mx-auto flex flex-wrap justify-center">
             <div class="p-2 relative">
               <div class="border border-gray-200 rounded-lg shadow-lg">
                 <!-- Vídeo 1 -->
                 <iframe id="video1" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div class="p-2 relative">
-              <div class="mx-auto border border-gray-200 rounded-lg shadow-lg">
-                <!-- Vídeo 2 -->
-                <iframe id="video2" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -172,20 +184,33 @@
           <div class="mt-10"></div>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima vero exercitationem ipsam asperiores dolorum fuga nostrum, magnam temporibus reprehenderit corrupti nam possimus quidem dolor quos ab numquam? Voluptatum, nam expedita.</p>
 
+          <!-- Informativo sobre o TDAH -->
+          <section id="sobre" class="flex flex-col">
+            <div class="mt-20">
+              <h1 class="text-xl font-bold mb-8 text-center">Dicas para te ajudar</h1>
+              
+              <!-- Botões para selecionar os fragmentos -->
+              <div class="flex space-x-4 flex-row">
+                <button type="button" onclick="loadFragment('sobre1')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 basis-1/3 rounded cursor-pointer">Cuide do Corpo e Mente</button>
+                <button type="button" onclick="loadFragment('sobre2')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 basis-1/3 rounded cursor-pointer">Organize suas tarefas e tempo</button>
+                <button type="button" onclick="loadFragment('sobre3')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 basis-1/3 rounded cursor-pointer">Mantenha contatos saudáveis</button>
+              </div>
+            </div>
+            
+            <!-- Local para carregar os fragmentos -->
+            <div class="border border-gray-300 mt-8 mb-8 shadow-md p-8 rounded-lg">
+              <div id="fragment-container"></div>
+            </div>
+          </section>
+
           <div class="mt-10"></div>
-          <h2 class="text-2xl font-bold mb-8 text-center">Habilidades</h2>
+          <h2 class="text-2xl font-bold mb-8 text-center">Um caminho diferente</h2>
 
           <div class="mx-auto flex flex-wrap justify-center">
             <div class="p-2 relative">
               <div class="border border-gray-200 rounded-lg shadow-lg">
                 <!-- Vídeo 1 -->
                 <iframe id="video1" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div class="p-2 relative">
-              <div class="mx-auto border border-gray-200 rounded-lg shadow-lg">
-                <!-- Vídeo 2 -->
-                <iframe id="video2" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -199,27 +224,21 @@
           </div>
         </section>
 
-        <!--Trilha dos Recursos Humanos-->
+        <!-- Trilha dos Recursos Humanos -->
         <section id="rh" class="flex flex-col">
           <div class="mt-20"></div>
-          <h1 class="text-3xl font-bold mb-8 text-center">Os Recursos Humanos</h1>
+          <h1 class="text-3xl font-bold mb-8 text-center">O Elo dos Recursos Humanos</h1>
 
           <p class="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima vero exercitationem ipsam asperiores dolorum fuga nostrum, magnam temporibus reprehenderit corrupti nam possimus quidem dolor quos ab numquam? Voluptatum, nam expedita.</p>
-
+          
           <div class="mt-10"></div>
-          <h2 class="text-2xl font-bold mb-8 text-center">O trabalho</h2>
+          <h2 class="text-2xl font-bold mb-8 text-center">Ambientes inclusivos para serem produtivos</h2>
 
           <div class="mx-auto flex flex-wrap justify-center">
             <div class="p-2 relative">
               <div class="border border-gray-200 rounded-lg shadow-lg">
                 <!-- Vídeo 1 -->
                 <iframe id="video1" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div class="p-2 relative">
-              <div class="mx-auto border border-gray-200 rounded-lg shadow-lg">
-                <!-- Vídeo 2 -->
-                <iframe id="video2" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
           </div>
