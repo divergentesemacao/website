@@ -51,3 +51,4 @@ document.addEventListener('click', function(event) {
         details.removeAttribute('open');
     }
 });
+

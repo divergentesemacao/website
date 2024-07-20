@@ -44,6 +44,28 @@
         border-radius: 50%;
         cursor: pointer;
       }
+
+      .hidden {
+            display: none;
+      }
+      /* Custom styles for button container */
+      .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .button-container button {
+            flex: 1; /* Makes all buttons take equal width */
+            margin: 0 4px; /* Adjust the space between buttons */
+        }
+        /* Custom class for fullscreen iframe */
+        .fullscreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 50; /* Ensure it's above other content */
+        }
     </style>
   </head>
   <body class="bg-gray-100">
@@ -90,11 +112,11 @@
       <div class="flex-none 2xl:w-4/12 xl:w-6/12 lg:w-8/12 md:w-9/12 w-11/12">
 
         <!-- Apresentação do Projeto -->
-        <!-- Busque abordar o design visando um publico geral, que o faça querer descer e ver mais do site -->
+        <!-- Busque abordar o design visando um publico geral, que o faça querer descer e ver mais do site 
         <section id="inicio" class="flex flex-col">
           <div class="mt-20">
             <div class="frame h-64 bg-gray-200 mb-4" id="frame">
-                <!-- Conteúdo do quadro aqui -->
+                 Conteúdo do quadro aqui
             </div>
             <div class="bullets text-center">
               <span class="bullet bg-gray-600" onclick="changeColor(0)"></span>
@@ -102,41 +124,120 @@
               <span class="bullet bg-gray-400" onclick="changeColor(2)"></span>
             </div>
           </div>
-        </section>
+        </section>-->
         
-        <!-- Apoiadores -->
-        <section>
-          
-        </section>
-
-        <!-- Informativo sobre o TDAH -->
-        <section>
-          
-        </section>
-
-        
-
         <!-- Direcionamento para as Trilhas -->
         <section id="projeto">
           <div class="mt-20"></div>
             <h1 class="text-3xl font-bold mb-8 text-center">O Projeto</h1>
 
-            <p class="text-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda optio vitae possimus inventore dolores eum eius ipsa sunt quae ullam necessitatibus deleniti placeat sapiente, sint aliquid reprehenderit autem eaque molestias.</p>
+            <p class="text-left">Olá, sejam muito bem-vindas e bem-vindos ao projeto Empregabilidade de Jovens de Ti (Tecnologia da Informação) com TDAH (Transtorno do Déficit de Atenção com Hiperatividade).</p>
+
+            <p class="text-left mt-5">A ideia foi desenvolvida e implantada a partir de um projeto de extensão, no campus da UNIP de Araraquara/SP no 1º semestre de 2024. A coodernação é da Professora Drª Eduarda Regina Carvalho coordenadora da engenharia, apoio do Professor MSc Oliver Zancul Prado coordenador da psicologia, e do Economista Renato Alves de Souza Diretor da ONG Mosaic Universe, tais condições me permitiram desenvolver e organiza os trabalhos que consistiram em liderar um time de jovens alunos talentosos das áreas de Computação e Psicologia que trabalharam diretamente na viabilização do projeto.</p>
+              
+            <p class="text-left mt-5">O foco é conscientizar a sociedade sobre o tema Mercado de Trabalho ao TDAH, em particular Informar ao jovem com TDAH inserido na área de TI. Observa-se não só desafios a serem enfrentados, mas também incríveis habilidades e alto rendimento profissional, desde que respeitado, compreendido e alocado em ambiente correto. Reunindo condições favoráveis  os TDAH prosperaram no mercado de trabalho, inovam e gerar alta produtividade com excelentes resultados pessoais e para a empresa.</p>
+              
+            <p class="text-left mt-5">Portanto, visa-se orientar o Jovem Profissional de TI com TDAH, informar e conscientizar RHs e empresários sobre o tema, bem como demonstrar que é possível obter alta competitividade com o profissional com TDAH no quadro de colaboradores, além de contribuir para a evolução de uma sociedade mais justa e humana.</p>
+              
+            <p class="text-left mt-5">Nosso Muito Obrigado!</p>
 
             <div class="mt-10"></div>
-            
+    
+        </section>
+
+        <!-- Direcionamento para as Trilhas -->
+        <section id="intro">
+          <div class="mt-20"></div>
+            <h1 class="text-3xl font-bold mb-8 text-center">Uma breve Introdução</h1>
+
+            <p class="text-left">O que é o TDAH, quais são seus desafios, sintomas e como vivem estes profissionais? Neste primeiro bloco, é apresentado uma breve introdução para que possa rapidamente entender de forma geral sobre o assunto.</p>
+
+            <div class="mt-10"></div>
             <div class="mx-auto flex flex-wrap justify-center">
-              <div class="p-2 relative">
-                <div class="border border-gray-200 rounded-lg shadow-lg">
-                  <!-- Vídeo 1 -->
-                  <iframe id="video1" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
+              <div class="mx-auto flex flex-wrap justify-center">
+                <div class="p-2 relative">
+                  <div class="border border-gray-200 rounded-lg shadow-lg">
+                    <!-- Vídeo 1 -->
+                    <iframe id="video1" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            
-            
+              <div class="mx-auto flex flex-wrap justify-center">
+                <div class="p-2 relative">
+                  <div class="border border-gray-200 rounded-lg shadow-lg">
+                    <!-- Vídeo 2 -->
+                    <iframe id="video1" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
         </section>
+
+        <!-- Informativo sobre o TDAH -->
+        <div class="max-w-4xl mx-auto p-6 mt-5">
+          <h1 class="text-xl font-bold mb-6 text-center">Habilidades do TDAH</h1>
+          <p class="text-left mt-5">Como visto, com o tratamento correto, o jovem com TDAH consegue obter um grande ganho de desempenho, assim lhe permitindo inclusive, tirar vantagem de algumas habilidades que este possui:</p>
+
+          <!-- Buttons to switch sections -->
+          <div class="button-container mb-6 mt-5">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="showSection('hiperfoco')">Hiperfoco</button>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="showSection('criatividade')">Criatividade</button>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="showSection('energia')">Energia</button>
+          </div>
+  
+          <!-- Hiperfoco -->
+          <section id="hiperfoco" class="section-content mb-8">
+              <h2 class="text-2xl font-semibold mb-4">1. Hiperfoco</h2>
+              <p class="mb-2"><strong>Descrição:</strong> Hiperfoco é a capacidade de concentrar intensamente em uma tarefa específica por longos períodos, ignorando outras atividades ou distrações.</p>
+              <div class="bg-white shadow-md rounded-lg p-4 mb-4">
+                  <h3 class="text-xl font-medium mb-2">Quando não tratado:</h3>
+                  <ul class="list-disc list-inside">
+                      <li>A pessoa pode ficar tão absorvida em uma tarefa que negligencia outras responsabilidades importantes, levando à perda de noção do tempo e esquecimento de compromissos.</li>
+                  </ul>
+              </div>
+              <div class="bg-white shadow-md rounded-lg p-4">
+                  <h3 class="text-xl font-medium mb-2">Quando tratado:</h3>
+                  <ul class="list-disc list-inside">
+                      <li>O hiperfoco pode ser direcionado e controlado de maneira produtiva, para tarefas importantes e prazos críticos.</li>
+                  </ul>
+              </div>
+          </section>
+  
+          <!-- Criatividade -->
+          <section id="criatividade" class="section-content hidden mb-8">
+              <h2 class="text-2xl font-semibold mb-4">2. Criatividade</h2>
+              <p class="mb-2"><strong>Descrição:</strong> Indivíduos com TDAH frequentemente demonstram níveis elevados de criatividade, sendo capazes de pensar "fora da caixa" e gerar ideias inovadoras.</p>
+              <div class="bg-white shadow-md rounded-lg p-4 mb-4">
+                  <h3 class="text-xl font-medium mb-2">Quando não tratado:</h3>
+                  <ul class="list-disc list-inside">
+                      <li>A criatividade gera um efeito caótico e desorganizado, levando a dificuldades em concretizar projetos, pela falta de foco e planejamento.</li>
+                  </ul>
+              </div>
+              <div class="bg-white shadow-md rounded-lg p-4">
+                  <h3 class="text-xl font-medium mb-2">Quando tratado:</h3>
+                  <ul class="list-disc list-inside">
+                      <li>A criatividade pode ser canalizada de forma estruturada, permitindo que as ideias sejam desenvolvidas e implementadas eficazmente.</li>
+                  </ul>
+              </div>
+          </section>
+  
+          <!-- Energia -->
+          <section id="energia" class="section-content hidden">
+              <h2 class="text-2xl font-semibold mb-4">3. Energia</h2>
+              <p class="mb-2"><strong>Descrição:</strong> Pessoas com TDAH muitas vezes têm níveis elevados de energia e entusiasmo, o que pode ser uma vantagem em ambientes dinâmicos e rápidos.</p>
+              <div class="bg-white shadow-md rounded-lg p-4 mb-4">
+                  <h3 class="text-xl font-medium mb-2">Quando não tratado:</h3>
+                  <ul class="list-disc list-inside">
+                      <li>A energia pode se manifestar como inquietação e impulsividade, causando dificuldades em manter a atenção em tarefas monótonas.</li>
+                  </ul>
+              </div>
+              <div class="bg-white shadow-md rounded-lg p-4">
+                  <h3 class="text-xl font-medium mb-2">Quando tratado:</h3>
+                  <ul class="list-disc list-inside">
+                      <li>A energia pode ser direcionada de maneira produtiva, ajudando a concluir tarefas rapidamente e com entusiasmo.</li>
+                  </ul>
+              </div>
+          </section>
+      </div>
 
         <!-- Direcionamento para as Trilhas -->
         <section id="entender">
@@ -227,7 +328,7 @@
         <!-- Trilha dos Recursos Humanos -->
         <section id="rh" class="flex flex-col">
           <div class="mt-20"></div>
-          <h1 class="text-3xl font-bold mb-8 text-center">O Elo dos Recursos Humanos</h1>
+          <h1 class="text-3xl font-bold mb-8 text-center">O lado Empresarial</h1>
 
           <p class="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima vero exercitationem ipsam asperiores dolorum fuga nostrum, magnam temporibus reprehenderit corrupti nam possimus quidem dolor quos ab numquam? Voluptatum, nam expedita.</p>
           
@@ -331,7 +432,29 @@
       </div>
     </footer>
 
-  <script type="module" src="main.js"></script>
-  <script src="js/script.js"></script>
+    <script>
+      function showSection(sectionId) {
+            // Hide all sections with class 'section-content'
+            document.querySelectorAll('.section-content').forEach(section => section.classList.add('hidden'));
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.remove('hidden');
+      }
+
+      document.querySelectorAll('iframe').forEach(iframe => {
+            iframe.addEventListener('fullscreenchange', function() {
+                if (document.fullscreenElement) {
+                    iframe.classList.add('fullscreen');
+                } else {
+                    iframe.classList.remove('fullscreen');
+                }
+            });
+        });
+
+      // Show the first section by default
+      showSection('hiperfoco');
+    </script>
+    <script type="module" src="main.js"></script>
+    <!--<script src="js/script.js"></script>-->
   </body>
 </html>
