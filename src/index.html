@@ -44,28 +44,28 @@
         border-radius: 50%;
         cursor: pointer;
       }
-
+      /*
       .hidden {
             display: none;
       }
-      /* Custom styles for button container */
+       Custom styles for button container */
       .button-container {
-            display: flex;
-            justify-content: space-between;
-        }
-        .button-container button {
-            flex: 1; /* Makes all buttons take equal width */
-            margin: 0 4px; /* Adjust the space between buttons */
-        }
-        /* Custom class for fullscreen iframe */
-        .fullscreen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: 50; /* Ensure it's above other content */
-        }
+          display: flex;
+          justify-content: space-between;
+      }
+      .button-container button {
+          flex: 1; /* Makes all buttons take equal width */
+          margin: 0 4px; /* Adjust the space between buttons */
+      }
+      /* Custom class for fullscreen iframe */
+      .fullscreen {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          z-index: 50; /* Ensure it's above other content */
+      }
     </style>
   </head>
   <body class="bg-gray-100">
@@ -87,8 +87,8 @@
           </summary>
           <div class="submenu">
             <ul>
-              <li><a href="#inicio" class="block mb-4 hover:text-gray-300">Inicio</a></li>
-              <li><a href="#projeto" class="block mb-4 hover:text-gray-300">O Projeto</a></li>
+              <li><a href="#projeto" class="block mb-4 hover:text-gray-300">Projeto</a></li>
+              <li><a href="#projeto" class="block mb-4 hover:text-gray-300">Projeto</a></li>
               <li><a href="#entender" class="block mb-4 hover:text-gray-300">Entender</a></li>
               <li><a href="#equipe" class="block mb-4 hover:text-gray-300">A Equipe</a></li>
               <!--<li><a href="#pesquisa" class="block hover:text-gray-300">Pesquisa</a></li>-->
@@ -96,8 +96,8 @@
           </div>
         </details>
         <ul class="hidden md:flex space-x-4">
-          <li><a href="#inicio" class="hover:text-gray-300">Inicio</a></li>
-          <li><a href="#projeto" class="hover:text-gray-300">O Projeto</a></li>
+          <li><a href="#projeto" class="hover:text-gray-300">Projeto</a></li>
+          <li><a href="#projeto" class="hover:text-gray-300">Projeto</a></li>
           <li><a href="#entender" class="hover:text-gray-300">Entender</a></li>
           <li><a href="#equipe" class="hover:text-gray-300">A Equipe</a></li>
           <!--<li><a href="#pesquisa" class="hover:text-gray-300">Pesquisa</a></li>-->
@@ -106,10 +106,10 @@
     </nav>
 
     <!-- Area de Trabalho -->
-    <main class="justify-center items-center mb-80 mx-6 flex">
+    <main class="justify-center items-center sm:mb-80 sm:mx-6 mx-1 flex">
       <div class="grow"></div>
 
-      <div class="flex-none 2xl:w-4/12 xl:w-6/12 lg:w-8/12 md:w-9/12 w-11/12">
+      <div class="flex-none 2xl:w-4/12 xl:w-6/12 lg:w-8/12 md:w-9/12 w-full">
 
         <!-- Apresentação do Projeto -->
         <!-- Busque abordar o design visando um publico geral, que o faça querer descer e ver mais do site 
@@ -128,7 +128,7 @@
         
         <!-- Direcionamento para as Trilhas -->
         <section id="projeto">
-          <div class="mt-20"></div>
+          <div class="pt-20">
             <h1 class="text-3xl font-bold mb-8 text-center">O Projeto</h1>
 
             <p class="text-left">Olá, sejam muito bem-vindas e bem-vindos ao projeto Empregabilidade de Jovens de Ti (Tecnologia da Informação) com TDAH (Transtorno do Déficit de Atenção com Hiperatividade).</p>
@@ -142,12 +142,13 @@
             <p class="text-left mt-5">Nosso Muito Obrigado!</p>
 
             <div class="mt-10"></div>
+          </div>
     
         </section>
 
         <!-- Direcionamento para as Trilhas -->
-        <section id="intro">
-          <div class="mt-20"></div>
+        <section id="intro" class="px-6">
+          <div class="pt-20"></div>
             <h1 class="text-3xl font-bold mb-8 text-center">Uma breve Introdução</h1>
 
             <p class="text-left">O que é o TDAH, quais são seus desafios, sintomas e como vivem estes profissionais? Neste primeiro bloco, é apresentado uma breve introdução para que possa rapidamente entender de forma geral sobre o assunto.</p>
@@ -173,7 +174,7 @@
         </section>
 
         <!-- Informativo sobre o TDAH -->
-        <div class="max-w-4xl mx-auto p-6 mt-5">
+        <div class="max-w-4xl mx-auto px-2 mt-5">
           <h1 class="text-xl font-bold mb-6 text-center">Habilidades do TDAH</h1>
           <p class="text-left mt-5">Como visto, com o tratamento correto, o jovem com TDAH consegue obter um grande ganho de desempenho, assim lhe permitindo inclusive, tirar vantagem de algumas habilidades que este possui:</p>
 
@@ -188,13 +189,13 @@
           <section id="hiperfoco" class="section-content mb-8">
               <h2 class="text-2xl font-semibold mb-4">1. Hiperfoco</h2>
               <p class="mb-2"><strong>Descrição:</strong> Hiperfoco é a capacidade de concentrar intensamente em uma tarefa específica por longos períodos, ignorando outras atividades ou distrações.</p>
-              <div class="bg-white shadow-md rounded-lg p-4 mb-4">
+              <div class="bg-red-100 shadow-md rounded-lg p-4 mb-4">
                   <h3 class="text-xl font-medium mb-2">Quando não tratado:</h3>
                   <ul class="list-disc list-inside">
                       <li>A pessoa pode ficar tão absorvida em uma tarefa que negligencia outras responsabilidades importantes, levando à perda de noção do tempo e esquecimento de compromissos.</li>
                   </ul>
               </div>
-              <div class="bg-white shadow-md rounded-lg p-4">
+              <div class="bg-green-100 shadow-md rounded-lg p-4">
                   <h3 class="text-xl font-medium mb-2">Quando tratado:</h3>
                   <ul class="list-disc list-inside">
                       <li>O hiperfoco pode ser direcionado e controlado de maneira produtiva, para tarefas importantes e prazos críticos.</li>
@@ -206,13 +207,13 @@
           <section id="criatividade" class="section-content hidden mb-8">
               <h2 class="text-2xl font-semibold mb-4">2. Criatividade</h2>
               <p class="mb-2"><strong>Descrição:</strong> Indivíduos com TDAH frequentemente demonstram níveis elevados de criatividade, sendo capazes de pensar "fora da caixa" e gerar ideias inovadoras.</p>
-              <div class="bg-white shadow-md rounded-lg p-4 mb-4">
+              <div class="bg-red-100 shadow-md rounded-lg p-4 mb-4">
                   <h3 class="text-xl font-medium mb-2">Quando não tratado:</h3>
                   <ul class="list-disc list-inside">
                       <li>A criatividade gera um efeito caótico e desorganizado, levando a dificuldades em concretizar projetos, pela falta de foco e planejamento.</li>
                   </ul>
               </div>
-              <div class="bg-white shadow-md rounded-lg p-4">
+              <div class="bg-green-100 shadow-md rounded-lg p-4">
                   <h3 class="text-xl font-medium mb-2">Quando tratado:</h3>
                   <ul class="list-disc list-inside">
                       <li>A criatividade pode ser canalizada de forma estruturada, permitindo que as ideias sejam desenvolvidas e implementadas eficazmente.</li>
@@ -224,135 +225,154 @@
           <section id="energia" class="section-content hidden">
               <h2 class="text-2xl font-semibold mb-4">3. Energia</h2>
               <p class="mb-2"><strong>Descrição:</strong> Pessoas com TDAH muitas vezes têm níveis elevados de energia e entusiasmo, o que pode ser uma vantagem em ambientes dinâmicos e rápidos.</p>
-              <div class="bg-white shadow-md rounded-lg p-4 mb-4">
+              <div class="bg-red-100 shadow-md rounded-lg p-4 mb-4">
                   <h3 class="text-xl font-medium mb-2">Quando não tratado:</h3>
                   <ul class="list-disc list-inside">
                       <li>A energia pode se manifestar como inquietação e impulsividade, causando dificuldades em manter a atenção em tarefas monótonas.</li>
                   </ul>
               </div>
-              <div class="bg-white shadow-md rounded-lg p-4">
+              <div class="bg-green-100 shadow-md rounded-lg p-4">
                   <h3 class="text-xl font-medium mb-2">Quando tratado:</h3>
                   <ul class="list-disc list-inside">
                       <li>A energia pode ser direcionada de maneira produtiva, ajudando a concluir tarefas rapidamente e com entusiasmo.</li>
                   </ul>
               </div>
           </section>
-      </div>
+        </div>
 
         <!-- Direcionamento para as Trilhas -->
-        <section id="entender">
-          <div class="mt-20"></div>
+        <section id="entender" class="px-6">
+          <div class="pt-20"></div>
             <h1 class="text-3xl font-bold mb-8 text-center">Os lados desta Questão</h1>
 
-            <p class="text-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda optio vitae possimus inventore dolores eum eius ipsa sunt quae ullam necessitatibus deleniti placeat sapiente, sint aliquid reprehenderit autem eaque molestias.</p>
+            <p class="text-left">No entanto, a sociedade ainda traz uma carga de pensamentos e preconceitos que não satisfazem com a realidade, o que culminam em lados opostos.</p>
+            <p class="text-left mt-5">Um do profissional, que busca atuar no mercado de trabalho. Já outro das Empresas, que desconhecem a produtividade e capacidade destes profissionais.</p>
+            <p class="text-left mt-5">Assim, visando abordar este conteúdo em toda a sua profundidade, dividimos em 3 trilhas, que se complementam entre si:</p>
 
             <div class="mt-10"></div>
             <div class="mx-auto flex flex-wrap justify-center">
               <div class="p-2 relative">
                 <div class="border border-gray-200 rounded-lg shadow-lg">
                   <!-- Trilha 1 -->
-                  <a href="#jovem"><img src="" alt="" class="bg-lime-600 md:w-56 md:h-96 md:m-3 w-44 h-72 m-3"></a>
+                  <a href="#jovem"><img src="./images/lado/DALL·E 2024-07-20 11.45.17 - A professional in the field of computing, standing from the waist up, in a work environment background. They are holding a laptop in one hand, dressed.webp" alt="" class="md:w-52 md:h-72 md:m-4 sm:w-32 sm:h-48 sm:m-3 w-24 h-36 m-2"></a>
                 </div>
               </div>
               <div class="p-2 relative">
                 <div class="mx-auto border border-gray-200 rounded-lg shadow-lg">
                   <!-- Trilha 2 -->
-                  <a href="#rh"><img src="" alt="" class="bg-orange-600 md:w-56 md:h-96 md:m-3 w-44 h-72 m-3"></a>
+                  <a href="#rh"><img src="" alt="" class="bg-orange-600 md:w-52 md:h-72 md:m-4 sm:w-32 sm:h-48 sm:m-3 w-24 h-36 m-2"></a>
+                </div>
+              </div>
+              <div class="p-2 relative">
+                <div class="mx-auto border border-gray-200 rounded-lg shadow-lg">
+                  <!-- Trilha 3 -->
+                  <a href="#empresa"><img src="" alt="" class="bg-orange-600 md:w-52 md:h-72 md:m-4 sm:w-32 sm:h-48 sm:m-3 w-24 h-36 m-2"></a>
                 </div>
               </div>
             </div>
         </section>
 
         <!-- Trilha do Jovem TDAH -->
-        <section id="jovem" class="flex flex-col">
-          <div class="mt-20">
+        <section id="jovem" class="flex flex-col px-6">
+          <div class="pt-20"></div>
           <h1 class="text-3xl font-bold mb-8 text-center">O Profissional com TDAH</h1>
 
           <p class="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima vero exercitationem ipsam asperiores dolorum fuga nostrum, magnam temporibus reprehenderit corrupti nam possimus quidem dolor quos ab numquam? Voluptatum, nam expedita.</p>
 
           <div class="mt-10"></div>
-          <h2 class="text-2xl font-bold mb-8 text-center">Vivendo com o Transtorno</h2>
-
-          <div class="mx-auto flex flex-wrap justify-center">
-            <div class="p-2 relative">
-              <div class="border border-gray-200 rounded-lg shadow-lg">
-                <!-- Vídeo 1 -->
-                <iframe id="video1" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+              <h2 class="text-2xl font-bold mb-4">Em breve</h2>
+              <p class="text-lg mb-6">Nos siga em nossas redes sociais:</p>
+              <div class="flex justify-center space-x-4">
+                  <!-- Ícone de LinkedIn -->
+                  <a href="https://www.linkedin.com" target="_blank" class="text-blue-700 hover:text-blue-900">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22.23 0H1.77C.792 0 0 .792 0 1.77v20.46C0 23.208.792 24 1.77 24h20.46c.978 0 1.77-.792 1.77-1.77V1.77C24 .792 23.208 0 22.23 0zM7.3 20.452H3.6V9.211h3.7v11.241zM5.451 7.579c-1.158 0-2.097-.975-2.097-2.18 0-1.208.939-2.181 2.097-2.181 1.158 0 2.097.973 2.097 2.181 0 1.205-.939 2.18-2.097 2.18zm16.622 12.867h-3.701v-5.739c0-1.43-.051-3.271-1.991-3.271-1.992 0-2.294 1.556-2.294 3.154v5.855h-3.701V9.211h3.553v1.528h.051c.493-.937 1.706-1.926 3.507-1.926 3.757 0 4.448 2.465 4.448 5.665v6.974z"/>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com" target="_blank" class="text-gray-700 hover:text-gray-900">
+                    <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                    </svg>
+                  </a>
+                  <a href="https://www.youtube.com" target="_blank" class="text-red-700 hover:text-red-900">
+                    <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                    </svg>
+                  </a>
               </div>
             </div>
-          </div>
-
-          <div class="mt-10"></div>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima vero exercitationem ipsam asperiores dolorum fuga nostrum, magnam temporibus reprehenderit corrupti nam possimus quidem dolor quos ab numquam? Voluptatum, nam expedita.</p>
-
-          <!-- Informativo sobre o TDAH -->
-          <section id="sobre" class="flex flex-col">
-            <div class="mt-20">
-              <h1 class="text-xl font-bold mb-8 text-center">Dicas para te ajudar</h1>
-              
-              <!-- Botões para selecionar os fragmentos -->
-              <div class="flex space-x-4 flex-row">
-                <button type="button" onclick="loadFragment('sobre1')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 basis-1/3 rounded cursor-pointer">Cuide do Corpo e Mente</button>
-                <button type="button" onclick="loadFragment('sobre2')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 basis-1/3 rounded cursor-pointer">Organize suas tarefas e tempo</button>
-                <button type="button" onclick="loadFragment('sobre3')" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 basis-1/3 rounded cursor-pointer">Mantenha contatos saudáveis</button>
-              </div>
-            </div>
-            
-            <!-- Local para carregar os fragmentos -->
-            <div class="border border-gray-300 mt-8 mb-8 shadow-md p-8 rounded-lg">
-              <div id="fragment-container"></div>
-            </div>
-          </section>
-
-          <div class="mt-10"></div>
-          <h2 class="text-2xl font-bold mb-8 text-center">Um caminho diferente</h2>
-
-          <div class="mx-auto flex flex-wrap justify-center">
-            <div class="p-2 relative">
-              <div class="border border-gray-200 rounded-lg shadow-lg">
-                <!-- Vídeo 1 -->
-                <iframe id="video1" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-10"></div>
-          <p>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos labore harum consequuntur voluptas, atque odit, provident est dolore ea assumenda eveniet non quo nemo ex hic ratione possimus corrupti?</span>
-            <span>Fuga quae asperiores sint, iusto, atque fugit non dolores odit, eligendi praesentium voluptatum animi eveniet nostrum reprehenderit veniam? Ratione, id culpa? Facilis placeat a accusamus veniam hic eveniet magnam nobis.</span>
-          </p>
-
-          </div>
         </section>
 
         <!-- Trilha dos Recursos Humanos -->
-        <section id="rh" class="flex flex-col">
-          <div class="mt-20"></div>
-          <h1 class="text-3xl font-bold mb-8 text-center">O lado Empresarial</h1>
+        <section id="rh" class="flex flex-col px-6">
+          <div class="pt-20"></div>
+          <h1 class="text-3xl font-bold mb-8 text-center">O meio de campo do RH</h1>
 
           <p class="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima vero exercitationem ipsam asperiores dolorum fuga nostrum, magnam temporibus reprehenderit corrupti nam possimus quidem dolor quos ab numquam? Voluptatum, nam expedita.</p>
           
           <div class="mt-10"></div>
-          <h2 class="text-2xl font-bold mb-8 text-center">Ambientes inclusivos para serem produtivos</h2>
 
-          <div class="mx-auto flex flex-wrap justify-center">
-            <div class="p-2 relative">
-              <div class="border border-gray-200 rounded-lg shadow-lg">
-                <!-- Vídeo 1 -->
-                <iframe id="video1" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
-              </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <h2 class="text-2xl font-bold mb-4">Em breve</h2>
+            <p class="text-lg mb-6">Nos siga em nossas redes sociais:</p>
+            <div class="flex justify-center space-x-4">
+                <!-- Ícone de LinkedIn -->
+                <a href="https://www.linkedin.com" target="_blank" class="text-blue-700 hover:text-blue-900">
+                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M22.23 0H1.77C.792 0 0 .792 0 1.77v20.46C0 23.208.792 24 1.77 24h20.46c.978 0 1.77-.792 1.77-1.77V1.77C24 .792 23.208 0 22.23 0zM7.3 20.452H3.6V9.211h3.7v11.241zM5.451 7.579c-1.158 0-2.097-.975-2.097-2.18 0-1.208.939-2.181 2.097-2.181 1.158 0 2.097.973 2.097 2.181 0 1.205-.939 2.18-2.097 2.18zm16.622 12.867h-3.701v-5.739c0-1.43-.051-3.271-1.991-3.271-1.992 0-2.294 1.556-2.294 3.154v5.855h-3.701V9.211h3.553v1.528h.051c.493-.937 1.706-1.926 3.507-1.926 3.757 0 4.448 2.465 4.448 5.665v6.974z"/>
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="text-gray-700 hover:text-gray-900">
+                  <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                  </svg>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="text-red-700 hover:text-red-900">
+                  <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                  </svg>
+                </a>
             </div>
           </div>
-          
-          <div class="mt-10"></div>
-          <p>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos labore harum consequuntur voluptas, atque odit, provident est dolore ea assumenda eveniet non quo nemo ex hic ratione possimus corrupti?</span>
-            <span>Fuga quae asperiores sint, iusto, atque fugit non dolores odit, eligendi praesentium voluptatum animi eveniet nostrum reprehenderit veniam? Ratione, id culpa? Facilis placeat a accusamus veniam hic eveniet magnam nobis.</span>
-          </p>
         </section>
 
-        <section id="videos" class="flex flex-col">
-          <div class="mt-20">
+        <!-- Trilha das Empresas -->
+        <section id="empresa" class="flex flex-col px-6">
+          <div class="pt-20"></div>
+          <h1 class="text-3xl font-bold mb-8 text-center">As Empresas</h1>
+
+          <p class="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima vero exercitationem ipsam asperiores dolorum fuga nostrum, magnam temporibus reprehenderit corrupti nam possimus quidem dolor quos ab numquam? Voluptatum, nam expedita.</p>
+          
+          <div class="mt-10"></div>
+
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <h2 class="text-2xl font-bold mb-4">Em breve</h2>
+            <p class="text-lg mb-6">Nos siga em nossas redes sociais:</p>
+            <div class="flex justify-center space-x-4">
+                <!-- Ícone de LinkedIn -->
+                <a href="https://www.linkedin.com" target="_blank" class="text-blue-700 hover:text-blue-900">
+                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M22.23 0H1.77C.792 0 0 .792 0 1.77v20.46C0 23.208.792 24 1.77 24h20.46c.978 0 1.77-.792 1.77-1.77V1.77C24 .792 23.208 0 22.23 0zM7.3 20.452H3.6V9.211h3.7v11.241zM5.451 7.579c-1.158 0-2.097-.975-2.097-2.18 0-1.208.939-2.181 2.097-2.181 1.158 0 2.097.973 2.097 2.181 0 1.205-.939 2.18-2.097 2.18zm16.622 12.867h-3.701v-5.739c0-1.43-.051-3.271-1.991-3.271-1.992 0-2.294 1.556-2.294 3.154v5.855h-3.701V9.211h3.553v1.528h.051c.493-.937 1.706-1.926 3.507-1.926 3.757 0 4.448 2.465 4.448 5.665v6.974z"/>
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="text-gray-700 hover:text-gray-900">
+                  <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                  </svg>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="text-red-700 hover:text-red-900">
+                  <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                  </svg>
+                </a>
+            </div>
+          </div>
+        </section>
+
+        
+        <section id="videos" class="flex flex-col px-6">
+          <div class="pt-20">
           <h1 class="text-3xl font-bold mb-8 text-center">Galeria de Videos</h1>
           
           <div class="not-prose relative rounded-xl overflow-hidden dark:bg-slate-800/25">
@@ -367,72 +387,214 @@
                   <div class="shrink-0 w-32"></div>
                 </div>
                 <div class="snap-center shrink-0 items-center">
+                    <div class="border border-gray-200 rounded-lg shadow-lg">
+                      <!-- Vídeo 1 -->
+                      <iframe id="video1" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="snap-center shrink-0">
                   <div class="border border-gray-200 rounded-lg shadow-lg">
                     <!-- Vídeo 1 -->
-                    <iframe id="video1" class="shrink-0 w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="video1" class="w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
                   </div>
                 </div>
                 <div class="snap-center shrink-0">
-                  <div class="border border-gray-200 rounded-lg shadow-lg">
-                    <!-- Vídeo 2 -->
-                    <iframe id="video1" class="shrink-0 w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="snap-center shrink-0">
-                  <div class="border border-gray-200 rounded-lg shadow-lg">
-                    <!-- Vídeo 3 -->
-                    <iframe id="video1" class="shrink-0 w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="snap-center shrink-0">
-                  <div class="border border-gray-200 rounded-lg shadow-lg">
-                    <!-- Vídeo 4 -->
-                    <iframe id="video1" class="shrink-0 w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="snap-center shrink-0">
-                  <div class="border border-gray-200 rounded-lg shadow-lg">
-                    <!-- Vídeo 5 -->
-                    <iframe id="video1" class="shrink-0 w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="snap-center shrink-0">
-                  <div class="border border-gray-200 rounded-lg shadow-lg">
-                    <!-- Vídeo 6 -->
-                    <iframe id="video1" class="shrink-0 w-56 h-96 m-3" src="https://www.youtube.com/embed/RfPbYllP_rY" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="snap-center shrink-0">
-                  <div class="shrink-0 w-32"></div>
+                  <div class="shrink-0 w-5"></div>
                 </div>
               </div>
               <div class="absolute inset-0 pointer-events-none border border-black/5 rounded-xl dark:border-white/5"></div>
             </div>
           </div>
-
         </section>
 
-        <!-- Sobre o Gestor -->
-        <!-- Busque abordar o design visando um publico empresarial mais sério 
-        <section id="gestor">
-          <h2>O Gestor</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi explicabo repellat perspiciatis vel aliquid tenetur? Suscipit ut explicabo magnam necessitatibus veritatis qui voluptas, at reprehenderit, quia excepturi modi tenetur ducimus?</p>
-        </section>
-        -->
       </div>
 
       <div class="grow"></div>
     </main>
+
+        <!-- Creditos -->
+        <section id="empresa" class="flex flex-col px-6">
+          <div class="pt-20"></div>
+          <h1 class="text-3xl font-bold mb-8 text-center">A Equipe</h1>
+
+          <div class="container mx-auto">
+            <h2 class="text-2xl text-center">Organizadores do Projeto</h2>
+            <div class="mt-10"></div>
+            <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="link_para_foto1.jpg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
+                    <h2 class="text-xl font-semibold mt-4 text-center">Professora Drª Eduarda Regina Carvalho</h2>
+                    <p class="text-gray-600 text-center">Coordenadora de Engenharia e Computação - Unip Araraquara<br>Coordenadora do Projeto Empregabilidade do Jovem TDAH no setor de TI</p>
+                    <div class="flex justify-center mt-4">
+                        <a href="mailto:email1@example.com" target="_blank" class="text-blue-600 mx-2">Email</a>
+                        <a href="https://www.linkedin.com/in/linkedin1" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
+                        <a href="https://lattes.cnpq.br/lattes1" target="_blank" class="text-blue-600 mx-2">Lattes</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <img src="link_para_foto1.jpg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
+                  <h2 class="text-xl font-semibold mt-4 text-center">Professor MSc Oliver Zancul Prado</h2>
+                  <p class="text-gray-600 text-center">Coordenador de Psicologia - Unip Araraquara</p>
+                  <div class="flex justify-center mt-4">
+                      <a href="mailto:email1@example.com" target="_blank" class="text-blue-600 mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/linkedin1" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br/lattes1" target="_blank" class="text-blue-600 mx-2">Lattes</a>
+                  </div>
+                </div>
+              
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <img src="link_para_foto1.jpg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
+                  <h2 class="text-xl font-semibold mt-4 text-center">Renato Alves de Souza</h2>
+                  <p class="text-gray-600 text-center">Diretor da ONG Mosaic Universe</p>
+                  <div class="flex justify-center mt-4">
+                      <a href="mailto:email1@example.com" target="_blank" class="text-blue-600 mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/linkedin1" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br/lattes1" target="_blank" class="text-blue-600 mx-2">Lattes</a>
+                  </div>
+                </div>
+               
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                  <img src="link_para_foto1.jpg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
+                  <h2 class="text-xl font-semibold mt-4 text-center">Miguel Eduardo Senna Moroni</h2>
+                  <p class="text-gray-600 text-center">Aluno, líder do Projeto</p>
+                  <div class="flex justify-center mt-4">
+                      <a href="mailto:email1@example.com" target="_blank" class="text-blue-600 mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/linkedin1" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br/lattes1" target="_blank" class="text-blue-600 mx-2">Lattes</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="container mx-auto">
+            <div class="mt-10"></div>
+            <h2 class="text-2xl text-center">Alunos Participantes do Projeto</h2>
+            <div class="mt-10"></div>
+            <div id="creditsContainer" class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+                <!-- Card 1 -->
+                <div class="creditCard bg-white p-6 rounded-lg shadow-lg">
+                    <img src="link_para_foto1.jpg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
+                    <h2 class="text-xl font-semibold mt-4 text-center">Aluno</h2>
+                    <p class="text-gray-600 text-center">Programação</p>
+                    <div class="flex justify-center mt-4">
+                        <a href="mailto:email1@example.com" target="_blank" class="text-blue-600 mx-2">Email</a>
+                        <a href="https://www.linkedin.com/in/linkedin1" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
+                        <a href="https://lattes.cnpq.br/lattes1" target="_blank" class="text-blue-600 mx-2">Lattes</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="creditCard bg-white p-6 rounded-lg shadow-lg">
+                  <img src="link_para_foto1.jpg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
+                  <h2 class="text-xl font-semibold mt-4 text-center">Aluno</h2>
+                  <p class="text-gray-600 text-center">Psicologia</p>
+                  <div class="flex justify-center mt-4">
+                      <a href="mailto:email1@example.com" target="_blank" class="text-blue-600 mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/linkedin1" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br/lattes1" target="_blank" class="text-blue-600 mx-2">Lattes</a>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="creditCard bg-white p-6 rounded-lg shadow-lg">
+                  <img src="link_para_foto1.jpg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
+                  <h2 class="text-xl font-semibold mt-4 text-center">Aluno</h2>
+                  <p class="text-gray-600 text-center">Psicologia</p>
+                  <div class="flex justify-center mt-4">
+                      <a href="mailto:email1@example.com" target="_blank" class="text-blue-600 mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/linkedin1" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br/lattes1" target="_blank" class="text-blue-600 mx-2">Lattes</a>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="creditCard bg-white p-6 rounded-lg shadow-lg">
+                  <img src="link_para_foto1.jpg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
+                  <h2 class="text-xl font-semibold mt-4 text-center">Aluno</h2>
+                  <p class="text-gray-600 text-center">Psicologia</p>
+                  <div class="flex justify-center mt-4">
+                      <a href="mailto:email1@example.com" target="_blank" class="text-blue-600 mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/linkedin1" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br/lattes1" target="_blank" class="text-blue-600 mx-2">Lattes</a>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="creditCard bg-white p-6 rounded-lg shadow-lg">
+                  <img src="link_para_foto1.jpg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
+                  <h2 class="text-xl font-semibold mt-4 text-center">Aluno</h2>
+                  <p class="text-gray-600 text-center">Psicologia</p>
+                  <div class="flex justify-center mt-4">
+                      <a href="mailto:email1@example.com" target="_blank" class="text-blue-600 mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/linkedin1" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br/lattes1" target="_blank" class="text-blue-600 mx-2">Lattes</a>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="creditCard bg-white p-6 rounded-lg shadow-lg">
+                  <img src="link_para_foto1.jpg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
+                  <h2 class="text-xl font-semibold mt-4 text-center">Aluno</h2>
+                  <p class="text-gray-600 text-center">Psicologia</p>
+                  <div class="flex justify-center mt-4">
+                      <a href="mailto:email1@example.com" target="_blank" class="text-blue-600 mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/linkedin1" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br/lattes1" target="_blank" class="text-blue-600 mx-2">Lattes</a>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="creditCard bg-white p-6 rounded-lg shadow-lg">
+                  <img src="link_para_foto1.jpg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
+                  <h2 class="text-xl font-semibold mt-4 text-center">Aluno</h2>
+                  <p class="text-gray-600 text-center">Psicologia</p>
+                  <div class="flex justify-center mt-4">
+                      <a href="mailto:email1@example.com" target="_blank" class="text-blue-600 mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/linkedin1" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br/lattes1" target="_blank" class="text-blue-600 mx-2">Lattes</a>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="creditCard bg-white p-6 rounded-lg shadow-lg">
+                  <img src="link_para_foto1.jpg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
+                  <h2 class="text-xl font-semibold mt-4 text-center">Aluno</h2>
+                  <p class="text-gray-600 text-center">Psicologia</p>
+                  <div class="flex justify-center mt-4">
+                      <a href="mailto:email1@example.com" target="_blank" class="text-blue-600 mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/linkedin1" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br/lattes1" target="_blank" class="text-blue-600 mx-2">Lattes</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          
+        </section>
+
+      
     <!-- Fim da Area de Trabalho -->
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6 bottom-0 w-full mt-5">
       <div class="container mx-auto text-center">
         <p>Divergentes em Ação</p>
+        <p>Apoio: UNIP, Mozaic Universe</p>
       </div>
     </footer>
 
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById("creditsContainer");
+    const cards = Array.from(container.getElementsByClassName("creditCard"));
+    
+    // Função para embaralhar um array
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    // Embaralhar os cartões e renderizar na nova ordem
+    shuffle(cards).forEach(card => container.appendChild(card));
+});
+
       function showSection(sectionId) {
             // Hide all sections with class 'section-content'
             document.querySelectorAll('.section-content').forEach(section => section.classList.add('hidden'));
@@ -452,9 +614,9 @@
         });
 
       // Show the first section by default
-      showSection('hiperfoco');
+      //showSection('hiperfoco');
     </script>
     <script type="module" src="main.js"></script>
-    <!--<script src="js/script.js"></script>-->
+    <script src="js/script.js"></script>
   </body>
 </html>

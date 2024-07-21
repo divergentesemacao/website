@@ -1,14 +1,3 @@
-//Organizador de Fragmentos de Texto
-async function loadFragment(fragmentId) {
-    try {
-        const response = await fetch(`../frag/${fragmentId}.html`);
-        const html = await response.text();
-        document.getElementById('fragment-container').innerHTML = html;
-    } catch (error) {
-        console.error('Erro ao carregar fragmento HTML:', error);
-    }
-}
-
 //Carousel
 const frame = document.getElementById('frame');
 const bullets = document.querySelectorAll('.bullet');
