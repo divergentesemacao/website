@@ -41,3 +41,71 @@ document.addEventListener('click', function(event) {
     }
 });
 
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById("creditsContainer");
+    const cards = Array.from(container.getElementsByClassName("creditCard"));
+    
+    // Função para embaralhar um array
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    // Embaralhar os cartões e renderizar na nova ordem
+    shuffle(cards).forEach(card => container.appendChild(card));
+});
+
+function showSection(sectionId) {
+    // Hide all sections with class 'section-content'
+    document.querySelectorAll('.section-content').forEach(section => section.classList.add('hidden'));
+
+    // Show the selected section
+    document.getElementById(sectionId).classList.remove('hidden');
+}
+
+document.querySelectorAll('iframe').forEach(iframe => {
+    iframe.addEventListener('fullscreenchange', function() {
+        if (document.fullscreenElement) {
+            iframe.classList.add('fullscreen');
+        } else {
+            iframe.classList.remove('fullscreen');
+        }
+    });
+});
+
+// Show the first section by default
+//showSection('hiperfoco');
+
+document.addEventListener('DOMContentLoaded', () => {
+const userLang = navigator.language || navigator.userLanguage;
+const currentPath = window.location.pathname;
+
+// Verifica se a página já foi redirecionada nesta sessão
+if (!sessionStorage.getItem('languageRedirected')) {
+    const redirectUser = (langPath) => {
+        if (currentPath !== langPath) {
+            sessionStorage.setItem('languageRedirected', 'true');
+            window.location.href = langPath;
+        }
+    };
+
+    if (userLang.startsWith('pt')) {
+        redirectUser('.pt/index.html');
+    } else if (userLang.startsWith('fr')) {
+        redirectUser('./fr/index.html');
+    } else if (userLang.startsWith('es')) {
+        redirectUser('./es/index.html');
+    } else if (userLang.startsWith('de')) {
+        redirectUser('./de/index.html');
+    } else {
+        redirectUser('./index.html');
+    }
+}
+});
