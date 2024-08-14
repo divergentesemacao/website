@@ -1,3 +1,12 @@
+export default{
+    root: 'src',
+    build: {
+        outDir: '../dist',
+    },
+    base: "/website",
+};
+
+/*
 import { defineConfig } from 'vite';
 
 export default defineConfig({
@@ -9,7 +18,7 @@ export default defineConfig({
   },
 });
 
-/*
+
 export default{
     root: 'src',
     build: {
@@ -33,8 +42,6 @@ export default defineConfig
             main: resolve(__dirname, 'src/index.html')
             },
         },
-        emptyOutDir: true,
         base: "/website"
  },
-})
- */
+})*/
