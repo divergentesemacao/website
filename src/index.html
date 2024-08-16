@@ -756,8 +756,8 @@
             }
         };
 
-        if (userLang.startsWith('pt')) {
-            redirectUser('.pt/index.html');
+        if (userLang.startsWith('en')) {
+            redirectUser('.en/index.html');
         } else if (userLang.startsWith('fr')) {
             redirectUser('./fr/index.html');
         } else if (userLang.startsWith('es')) {
@@ -765,7 +765,7 @@
         } else if (userLang.startsWith('de')) {
             redirectUser('./de/index.html');
         } else {
-            redirectUser('./index.html');
+            redirectUser('.pt/index.html');
         }
     }
     });
