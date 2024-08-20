@@ -668,12 +668,20 @@ video {
   margin-bottom: 2rem;
 }
 
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
 .ml-\[100\%\] {
   margin-left: 100%;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .mt-20 {
@@ -690,18 +698,6 @@ video {
 
 .mt-56 {
   margin-top: 14rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
 }
 
 .block {
