@@ -23,7 +23,6 @@
         top: 100%;
         right: 0;
         width: 12rem;
-        background-color: #4b5563;
         padding: 2rem;
         z-index: 50;
       }
@@ -89,19 +88,19 @@
               <div class="w-full h-1 bg-white"></div>
             </div>
           </summary>
-          <div class="submenu rounded-bl-xl">
+          <div class="submenu bg-purple-900">
             <ul>
-              <li><a href="#projeto" class="block mb-4 hover:text-yellow-200">Projeto</a></li>
-              <li><a href="#intro" class="block mb-4 hover:text-gray-300">Sobre o TDAH</a></li>
-              <li><a href="#creditos" class="block mb-4 hover:text-gray-300">A Equipe</a></li>
+              <li><a href="#projeto" class="block mb-8 mt-4 pl-3 border-l-2 border-transparent text-gray-100 hover:border-white">Projeto</a></li>
+              <li><a href="#intro" class="block mb-8 pl-3 border-l-2 border-transparent text-gray-100 hover:border-white">Sobre o TDAH</a></li>
+              <li><a href="#creditos" class="block mb-4 pl-3 border-l-2 border-transparent text-gray-100 hover:border-white">A Equipe</a></li>
               <!--<li><a href="#pesquisa" class="block hover:text-gray-300">Pesquisa</a></li>-->
             </ul>
           </div>
         </details>
         <ul class="hidden md:flex space-x-4">
-          <li><a href="#projeto" class="hover:text-gray-300">Projeto</a></li>
-          <li><a href="#intro" class="hover:text-gray-300">Sobre o TDAH</a></li>
-          <li><a href="#creditos" class="hover:text-gray-300">A Equipe</a></li>
+          <li><a href="#projeto" class="pt-2 border-t-2 border-transparent text-gray-100 hover:border-white">Projeto</a></li>
+          <li><a href="#intro" class="pt-2 border-t-2 border-transparent text-gray-100 hover:border-white">Sobre o TDAH</a></li>
+          <li><a href="#creditos" class="pt-2 border-t-2 border-transparent text-gray-100 hover:border-white">A Equipe</a></li>
           <!--<li><a href="#pesquisa" class="hover:text-gray-300">Pesquisa</a></li>-->
         </ul>
       </div>
@@ -182,16 +181,16 @@
 
           <!-- Buttons to switch sections -->
           <div class="button-container mb-6 mt-5">
-            <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="showSection('hiperfoco')">Hiperfoco</button>
-            <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="showSection('criatividade')">Criatividade</button>
-            <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="showSection('energia')">Energia</button>
+            <button class="bg-white text-purple-900 border-2 border-purple-900 hover:bg-purple-900 hover:text-white px-4 py-2 rounded" onclick="showSection('hiperfoco')">Hiperfoco</button>
+            <button class="bg-white text-purple-900 border-2 border-purple-900 hover:bg-purple-900 hover:text-white px-4 py-2 rounded" onclick="showSection('criatividade')">Criatividade</button>
+            <button class="bg-white text-purple-900 border-2 border-purple-900 hover:bg-purple-900 hover:text-white px-4 py-2 rounded" onclick="showSection('energia')">Energia</button>
           </div>
   
           <!-- Hiperfoco -->
           <section id="hiperfoco" class="section-content mb-8">
               <h2 class="text-2xl font-semibold mb-4">1. Hiperfoco</h2>
-              <p class="mb-2"><strong>Descrição:</strong> Hiperfoco é a capacidade de concentrar intensamente em uma tarefa específica por longos períodos, ignorando outras atividades ou distrações.</p>
-              <div class="bg-red-100 shadow-md rounded-lg p-4 mb-4">
+              <p class="mb-2">Hiperfoco é a capacidade de concentrar intensamente em uma tarefa específica por longos períodos, ignorando outras atividades ou distrações.</p>
+              <div class="bg-red-100 shadow-md rounded-lg p-4 mb-4 mt-4">
                   <h3 class="text-xl font-medium mb-2">Quando não tratado:</h3>
                   <ul class="list-disc list-inside">
                       <li>A pessoa pode ficar tão absorvida em uma tarefa que negligencia outras responsabilidades importantes, levando à perda de noção do tempo e esquecimento de compromissos.</li>
@@ -208,8 +207,8 @@
           <!-- Criatividade -->
           <section id="criatividade" class="section-content hidden mb-8">
               <h2 class="text-2xl font-semibold mb-4">2. Criatividade</h2>
-              <p class="mb-2"><strong>Descrição:</strong> Indivíduos com TDAH frequentemente demonstram níveis elevados de criatividade, sendo capazes de pensar "fora da caixa" e gerar ideias inovadoras.</p>
-              <div class="bg-red-100 shadow-md rounded-lg p-4 mb-4">
+              <p class="mb-2">Indivíduos com TDAH frequentemente demonstram níveis elevados de criatividade, sendo capazes de pensar "fora da caixa" e gerar ideias inovadoras.</p>
+              <div class="bg-red-100 shadow-md rounded-lg p-4 mb-4 mt-4">
                   <h3 class="text-xl font-medium mb-2">Quando não tratado:</h3>
                   <ul class="list-disc list-inside">
                       <li>A criatividade gera um efeito caótico e desorganizado, levando a dificuldades em concretizar projetos, pela falta de foco e planejamento.</li>
@@ -226,8 +225,8 @@
           <!-- Energia -->
           <section id="energia" class="section-content hidden">
               <h2 class="text-2xl font-semibold mb-4">3. Energia</h2>
-              <p class="mb-2"><strong>Descrição:</strong> Pessoas com TDAH muitas vezes têm níveis elevados de energia e entusiasmo, o que pode ser uma vantagem em ambientes dinâmicos e rápidos.</p>
-              <div class="bg-red-100 shadow-md rounded-lg p-4 mb-4">
+              <p class="mb-2">Pessoas com TDAH muitas vezes têm níveis elevados de energia e entusiasmo, o que pode ser uma vantagem em ambientes dinâmicos e rápidos.</p>
+              <div class="bg-red-100 shadow-md rounded-lg p-4 mb-4 mt-4">
                   <h3 class="text-xl font-medium mb-2">Quando não tratado:</h3>
                   <ul class="list-disc list-inside">
                       <li>A energia pode se manifestar como inquietação e impulsividade, causando dificuldades em manter a atenção em tarefas monótonas.</li>
@@ -254,19 +253,19 @@
             <div class="mt-10"></div>
             <div class="mx-auto flex justify-center">
               <div class="p-2">
-                <div class="border border-gray-200 rounded-lg shadow-lg">
+                <div class="border border-gray-200 rounded-lg shadow-lg hover:border-purple-500">
                   <!-- Trilha 1 -->
                   <a href="#oprofissional"><img src="./images/lado/DALL·E 2024-07-20 11.45.17 - A professional in the field of computing, standing from the waist up, in a work environment background. They are holding a laptop in one hand, dressed.webp" alt="" class="h-56 m-2 rounded-lg"></a>
                 </div>
               </div>
               <div class="p-2">
-                <div class="mx-auto border border-gray-200 rounded-lg shadow-lg">
+                <div class="mx-auto border border-gray-200 rounded-lg shadow-lg hover:border-purple-500">
                   <!-- Trilha 2 -->
                   <a href="#orh"><img src="./images/lado/DALL·E 2024-07-23 09.40.56 - A man and a woman, both human resources professionals, standing from the waist up in a work environment background. They are dressed in professional o.webp" alt="" class="h-56 m-2 rounded-lg"></a>
                 </div>
               </div>
               <div class="p-2 relative">
-                <div class="mx-auto border border-gray-200 rounded-lg shadow-lg">
+                <div class="mx-auto border border-gray-200 rounded-lg shadow-lg hover:border-purple-500">
                   <!-- Trilha 3 -->
                   <a href="#aempresa"><img src="./images/lado/DALL·E 2024-07-23 09.40.56 - A man and a woman, both human resources professionals, standing from the waist up in a work environment background. They are dressed in professional o.webp" alt="" class="h-56 m-2 rounded-lg"></a>
                 </div>
@@ -286,7 +285,7 @@
           <p class="text-justify">Neste bloco, é apresentado conteúdos voltados tanto a quem possua TDAH, mas também a quem não tenha, onde abordaremos desde técnicas de gestão de tempo e de conflitos, organização de atividades e em como o time pode gerir as habilidades de cada integrante, visando uma relação harmoniosa e produtiva entre todos.</p>
 
           <div class="mt-10"></div>
-            <div class="border bg-white p-8 rounded-lg shadow-lg text-center">
+            <div class="bg-white p-8 text-center">
               <h2 class="text-2xl font-bold mb-4">Em breve</h2>
               <p class="text-lg mb-6">Nos siga em nossas redes sociais:</p>
               <div class="flex justify-center space-x-4">
@@ -306,7 +305,7 @@
                       <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
                     </svg>
                   </a>
-                  <a href="https://www.youtube.com" target="_blank" class="text-red-700 hover:text-gray-900">
+                  <a href="https://www.youtube.com/@DivergentesEmAcao?sub_confirmation=1" target="_blank" class="text-red-700 hover:text-gray-900">
                     <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                       <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                     </svg>
@@ -331,7 +330,7 @@
 
           <div class="mt-10"></div>
 
-          <div class="border bg-white p-8 rounded-lg shadow-lg text-center">
+          <div class="bg-white p-8 text-center">
             <h2 class="text-2xl font-bold mb-4">Em breve</h2>
             <p class="text-lg mb-6">Nos siga em nossas redes sociais:</p>
             <div class="flex justify-center space-x-4">
@@ -351,7 +350,7 @@
                     <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
                   </svg>
                 </a>
-                <a href="https://www.youtube.com" target="_blank" class="text-red-700 hover:text-gray-900">
+                <a href="https://www.youtube.com/@DivergentesEmAcao?sub_confirmation=1" target="_blank" class="text-red-700 hover:text-gray-900">
                   <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                     <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                   </svg>
@@ -376,7 +375,7 @@
           
           <div class="mt-10"></div>
 
-          <div class="border bg-white p-8 rounded-lg shadow-lg text-center">
+          <div class="bg-white p-8 text-center">
             <h2 class="text-2xl font-bold mb-4">Em breve</h2>
             <p class="text-lg mb-6">Nos siga em nossas redes sociais:</p>
             <div class="flex justify-center space-x-4">
@@ -396,7 +395,7 @@
                     <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
                   </svg>
                 </a>
-                <a href="https://www.youtube.com" target="_blank" class="text-red-700 hover:text-gray-900">
+                <a href="https://www.youtube.com/@DivergentesEmAcao?sub_confirmation=1" target="_blank" class="text-red-700 hover:text-gray-900">
                   <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                     <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                   </svg>
@@ -476,9 +475,9 @@
                   <h2 class="text-xl font-semibold mt-4 text-center"></h2>
                   <p class="text-gray-600 text-center"></p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:rasmill@hotmail.com" target="_blank" class="text-blue-600 mx-2">Email</a>
-                      <a href="https://www.linkedin.com/in/renato-alves-47032aa0" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
-                      <a href="https://lattes.cnpq.br" target="_blank" class="text-blue-600 mx-2 invisible">Lattes</a>
+                      <a href="mailto:rasmill@hotmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/renato-alves-47032aa0" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2 invisible">Lattes</a>
                   </div>
                 </div>
                -->
@@ -498,9 +497,9 @@
                     <h2 class="text-xl font-semibold mt-4 text-center">Professora Drª Eduarda Regina Carvalho</h2>
                     <p class="text-gray-600 text-center">Coordenadora de Engenharia e Computação - Unip Araraquara</p>
                     <div class="flex justify-center mt-4">
-                        <a href="mailto:carvalho_eduarda@ymail.com" target="_blank" class="text-blue-600 mx-2">Email</a>
-                        <a href="https://www.linkedin.com/in/eduardarcarvalho" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
-                        <a href="http://lattes.cnpq.br/5292233426713160" target="_blank" class="text-blue-600 mx-2">Lattes</a>
+                        <a href="mailto:carvalho_eduarda@ymail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 mx-2">Email</a>
+                        <a href="https://www.linkedin.com/in/eduardarcarvalho" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">LinkedIn</a>
+                        <a href="http://lattes.cnpq.br/5292233426713160" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">Lattes</a>
                     </div>
                 </div>
                 
@@ -509,9 +508,9 @@
                   <h2 class="text-xl font-semibold mt-4 text-center">Professor MSc Oliver Zancul Prado</h2>
                   <p class="text-gray-600 text-center">Coordenador de Psicologia - Unip Araraquara</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:oliver.prado@gmail.com" target="_blank" class="text-blue-600 mx-2">Email</a>
-                      <a href="https://www.linkedin.com/in/oliver-zancul-prado-a9b38035" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
-                      <a href="http://lattes.cnpq.br/7180556718230160" target="_blank" class="text-blue-600 mx-2">Lattes</a>
+                      <a href="mailto:oliver.prado@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/oliver-zancul-prado-a9b38035" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">LinkedIn</a>
+                      <a href="http://lattes.cnpq.br/7180556718230160" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">Lattes</a>
                   </div>
                 </div>
               
@@ -520,9 +519,9 @@
                   <h2 class="text-xl font-semibold mt-4 text-center">Renato Alves<sup>.*.</sup></h2>
                   <p class="text-gray-600 text-center">Diretor da ONG Mosaic Universe</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:rasmill@hotmail.com" target="_blank" class="text-blue-600 mx-2">Email</a>
-                      <a href="https://www.linkedin.com/in/renato-alves-47032aa0" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
-                      <a href="https://lattes.cnpq.br" target="_blank" class="text-blue-600 mx-2 invisible">Lattes</a>
+                      <a href="mailto:rasmill@hotmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/renato-alves-47032aa0" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2 invisible">Lattes</a>
                   </div>
                 </div>
                
@@ -531,9 +530,9 @@
                   <h2 class="text-xl font-semibold mt-4 text-center">Miguel Moroni</h2>
                   <p class="text-gray-600 text-center">Aluno e Líder do Projeto</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:miguelmcontato@gmail.com" target="_blank" class="text-blue-600 mx-2">Email</a>
-                      <a href="https://www.linkedin.com/in/migmoroni" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
-                      <a href="https://lattes.cnpq.br" target="_blank" class="text-blue-600 mx-2 invisible">Lattes</a>
+                      <a href="mailto:miguelmcontato@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/migmoroni" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2 invisible">Lattes</a>
                   </div>
                 </div>
             </div>
@@ -550,8 +549,8 @@
                     <h2 class="text-xl font-semibold mt-4 text-center">Felipe Oliveira</h2>
                     <p class="text-gray-600 text-center">Computação<br>Desenvolvimento</p>
                     <div class="flex justify-center mt-4">
-                        <a href="mailto:felipe_petronillo@hotmail.com" target="_blank" class="text-blue-600 mx-2">Email</a>
-                        <a href="https://www.linkedin.com/in/felipe-oliveira-6b83a9268" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
+                        <a href="mailto:felipe_petronillo@hotmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">Email</a>
+                        <a href="https://www.linkedin.com/in/felipe-oliveira-6b83a9268" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">LinkedIn</a>
                     </div>
                 </div>
 
@@ -560,8 +559,8 @@
                   <h2 class="text-xl font-semibold mt-4 text-center">Gabriel Carrascosa</h2>
                   <p class="text-gray-600 text-center">Computação<br>Edição de Video</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:bielcarrascosa@gmail.com" target="_blank" class="text-blue-600 mx-2">Email</a>
-                      <a href="https://www.linkedin.com/in/gabriel-carrascosa-9518bb286/" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
+                      <a href="mailto:bielcarrascosa@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/gabriel-carrascosa-9518bb286/" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">LinkedIn</a>
                   </div>
                 </div>
 
@@ -570,8 +569,8 @@
                   <h2 class="text-xl font-semibold mt-4 text-center">Victor Hartung </h2>
                   <p class="text-gray-600 text-center">Computação<br>Desenvolvimento</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:victoralexhartung@gmail.com" target="_blank" class="text-blue-600 mx-2">Email</a>
-                      <a href="https://www.linkedin.com" target="_blank" class="text-blue-600 mx-2 invisible">LinkedIn</a>
+                      <a href="mailto:victoralexhartung@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">Email</a>
+                      <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2 invisible">LinkedIn</a>
                   </div>
                 </div>
 
@@ -580,8 +579,8 @@
                   <h2 class="text-xl font-semibold mt-4 text-center">Kundherlly Xavier</h2>
                   <p class="text-gray-600 text-center">Computação<br>Pesquisa e Roteiro</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:email1@example.com" target="_blank" class="text-blue-600 mx-2 invisible">Email</a>
-                      <a href="https://www.linkedin.com" target="_blank" class="text-blue-600 mx-2 invisible">LinkedIn</a>
+                      <a href="mailto:email1@example.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2 invisible">Email</a>
+                      <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2 invisible">LinkedIn</a>
                   </div>
                 </div>
 
@@ -590,8 +589,8 @@
                   <h2 class="text-xl font-semibold mt-4 text-center">Luana Schwartz</h2>
                   <p class="text-gray-600 text-center">Computação<br>Pesquisa e Roteiro</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:luana.schwartz2@gmail.com" target="_blank" class="text-blue-600 mx-2">Email</a>
-                      <a href="https://www.linkedin.com" target="_blank" class="text-blue-600 mx-2 invisible">LinkedIn</a>
+                      <a href="mailto:luana.schwartz2@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">Email</a>
+                      <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2 invisible">LinkedIn</a>
                   </div>
                 </div>
 
@@ -600,8 +599,8 @@
                   <h2 class="text-xl font-semibold mt-4 text-center">Juliana Teixeira</h2>
                   <p class="text-gray-600 text-center">Computação<br>Pesquisa e Roteiro</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:juulianact27@outlook.com" target="_blank" class="text-blue-600 mx-2">Email</a>
-                      <a href="https://www.linkedin.com/in/juliana-teixeira-76a0b1295" target="_blank" class="text-blue-600 mx-2">LinkedIn</a>
+                      <a href="mailto:juulianact27@outlook.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/juliana-teixeira-76a0b1295" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">LinkedIn</a>
                   </div>
                 </div>
 
@@ -610,8 +609,8 @@
                   <h2 class="text-xl font-semibold mt-4 text-center">Luan Baptista</h2>
                   <p class="text-gray-600 text-center">Computação<br>Desenvolvimento</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:luanbap123@gmail.com" target="_blank" class="text-blue-600 mx-2">Email</a>
-                      <a href="https://www.linkedin.com" target="_blank" class="text-blue-600 mx-2 invisible">LinkedIn</a>
+                      <a href="mailto:luanbap123@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">Email</a>
+                      <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2 invisible">LinkedIn</a>
                   </div>
                 </div>
 
@@ -620,8 +619,8 @@
                   <h2 class="text-xl font-semibold mt-4 text-center">Gabriel Guerguti</h2>
                   <p class="text-gray-600 text-center">Computação<br>Desenvolvimento</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:email1@example.com" target="_blank" class="text-blue-600 mx-2 invisible">Email</a>
-                      <a href="https://www.linkedin.com" target="_blank" class="text-blue-600 mx-2 invisible">LinkedIn</a>
+                      <a href="mailto:email1@example.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2 invisible">Email</a>
+                      <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2 invisible">LinkedIn</a>
                   </div>
                 </div>
 
@@ -630,8 +629,8 @@
                   <h2 class="text-xl font-semibold mt-4 text-center">William Matheus Ferreira da Silva</h2>
                   <p class="text-gray-600 text-center">Psicologia<br>Embasamento teórico</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:matheusw261@gmail.com" target="_blank" class="text-blue-600 mx-2">Email</a>
-                      <a href="https://www.linkedin.com" target="_blank" class="text-blue-600 mx-2 invisible">LinkedIn</a>
+                      <a href="mailto:matheusw261@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">Email</a>
+                      <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2 invisible">LinkedIn</a>
                   </div>
                 </div>
 
@@ -640,8 +639,8 @@
                   <h2 class="text-xl font-semibold mt-4 text-center">Gabriela Medeiros</h2>
                   <p class="text-gray-600 text-center">Psicologia<br>Embasamento teórico</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:medeirosgabriela26@gmail.com" target="_blank" class="text-blue-600 mx-2">Email</a>
-                      <a href="https://www.linkedin.com" target="_blank" class="text-blue-600 mx-2 invisible">LinkedIn</a>
+                      <a href="mailto:medeirosgabriela26@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2">Email</a>
+                      <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2 invisible">LinkedIn</a>
                   </div>
                 </div>
 
@@ -650,8 +649,8 @@
                   <h2 class="text-xl font-semibold mt-4 text-center">Maria Eduarda</h2>
                   <p class="text-gray-600 text-center">Psicologia<br>Embasamento teórico</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:email1@example.com" target="_blank" class="text-blue-600 mx-2 invisible">Email</a>
-                      <a href="https://www.linkedin.com" target="_blank" class="text-blue-600 mx-2 invisible">LinkedIn</a>
+                      <a href="mailto:email1@example.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2 invisible">Email</a>
+                      <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 hover:border-transparent- mx-2 invisible">LinkedIn</a>
                   </div>
                 </div>
             </div>
@@ -695,7 +694,7 @@
                     <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
                   </svg>
                 </a>
-                <a href="https://www.youtube.com" target="_blank" class="text-red-700 hover:text-gray-300">
+                <a href="https://www.youtube.com/@DivergentesEmAcao?sub_confirmation=1" target="_blank" class="text-red-700 hover:text-gray-300">
                   <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                     <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                   </svg>
