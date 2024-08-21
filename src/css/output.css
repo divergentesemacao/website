@@ -948,9 +948,9 @@ video {
   background-color: rgb(220 252 231 / var(--tw-bg-opacity));
 }
 
-.bg-purple-100 {
+.bg-purple-200 {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 232 255 / var(--tw-bg-opacity));
+  background-color: rgb(233 213 255 / var(--tw-bg-opacity));
 }
 
 .bg-purple-900 {
@@ -971,6 +971,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-purple-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 180 254 / var(--tw-bg-opacity));
 }
 
 .p-2 {
@@ -1140,19 +1145,9 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-purple-300 {
-  --tw-shadow-color: #d8b4fe;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
 .\[mask-image\:linear-gradient\(0deg\2c \#fff\2c rgba\(255\2c 255\2c 255\2c 0\.6\)\)\] {
   -webkit-mask-image: linear-gradient(0deg,#fff,rgba(255,255,255,0.6));
           mask-image: linear-gradient(0deg,#fff,rgba(255,255,255,0.6));
-}
-
-.hover\:border-purple-500:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(168 85 247 / var(--tw-border-opacity));
 }
 
 .hover\:border-purple-900:hover {
@@ -1183,11 +1178,6 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:shadow-purple-500:hover {
-  --tw-shadow-color: #a855f7;
-  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .hover\:shadow-purple-300:hover {
