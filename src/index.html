@@ -22,7 +22,7 @@
         position: absolute;
         top: 100%;
         right: 0;
-        width: 12rem;
+        width: 16rem;
         padding: 2rem;
         z-index: 50;
       }
@@ -76,7 +76,7 @@
     <!-- <div id="comp-menu"></div> -->
 
     <!-- Menu fixo -->
-    <nav class="fixed w-full bg-purple-950 text-white p-4 z-50">
+    <nav class="fixed w-full bg-purple-900 dark:bg-purple-950 text-white p-4 z-50">
       <div class="container mx-auto flex justify-between items-center">
         <a href="#" class="text-gray-100 font-bold text-lg">Divergentes em Ação!</a>
         <details class="md:hidden">
@@ -88,12 +88,20 @@
               <div class="w-full h-1 bg-white rounded"></div>
             </div>
           </summary>
-          <div class="submenu bg-purple-900 rounded-bl-lg">
-            <ul>
-              <li><a href="#projeto" class="block mb-8 mt-4 pl-3 border-l-2 border-transparent text-gray-100 hover:border-white ease-linear duration-200">Projeto</a></li>
-              <li><a href="#intro" class="block mb-8 pl-3 border-l-2 border-transparent text-gray-100 hover:border-white ease-linear duration-200">Sobre o TDAH</a></li>
-              <li><a href="#creditos" class="block mb-8 pl-3 border-l-2 border-transparent text-gray-100 hover:border-white ease-linear duration-200">A Equipe</a></li>
-              <li><a href="#contato" class="block mb-4 pl-3 border-l-2 border-transparent text-gray-100 hover:border-white ease-linear duration-200">Contato</a></li>
+          <div class="submenu bg-purple-800 rounded-bl-xl">
+            <ul id="submenu">
+              <li><a href="#projeto" class="block mb-8 mt-4 pl-3 border-l-2 border-purple-600 text-gray-100 hover:border-white ease-linear duration-200">Projeto</a></li>
+              <li><a href="#intro" class="block mb-8 pl-3 border-l-2 border-purple-600 text-gray-100 hover:border-white ease-linear duration-200">Sobre o TDAH</a></li>
+              <li><a href="#lti" class="block mb-8 pl-3 border-l-2 border-purple-600 text-gray-100 hover:border-white ease-linear duration-200">Profissional de TI</a></li>
+              <li><a href="#lrh" class="block mb-8 pl-3 border-l-2 border-purple-600 text-gray-100 hover:border-white ease-linear duration-200">Os Recursos Humanos</a></li>
+              <li><a href="#lgestao" class="block mb-8 pl-3 border-l-2 border-purple-600 text-gray-100 hover:border-white ease-linear duration-200">A Gestão Empresarial</a></li>
+              <li><a href="#creditos" class="block mb-8 pl-3 border-l-2 border-purple-600 text-gray-100 hover:border-white ease-linear duration-200">A Equipe</a></li>
+              <li><a href="#contato" class="block mb-8 pl-3 border-l-2 border-purple-600 text-gray-100 hover:border-white ease-linear duration-200">Contato</a></li>
+              <li class="py-1">
+                <button id="theme-toggle" class="mb-2 border-none rounded-lg border-transparent bg-gray-800 text-gray-200 hover:bg-gray-950 dark:hover:bg-white dark:bg-gray-300 dark:text-gray-900 transition-colors ease-linear duration-900 px-4 py-1">
+                  Escuro
+                </button>
+              </li>
               <!--<li><a href="#pesquisa" class="block hover:text-gray-300">Pesquisa</a></li>-->
             </ul>
           </div>
@@ -104,7 +112,7 @@
           <li class="pt-2"><a href="#creditos" class="pt-2 border-t-2 border-transparent text-gray-100 hover:border-white ease-linear duration-200">A Equipe</a></li>
           <li class="py-2"><a href="#contato" class="pt-2 border-t-2 border-transparent text-gray-100 hover:border-white ease-linear duration-200">Contato</a></li>
           <li class="py-1">
-            <button id="theme-toggle" class="border-none rounded-lg border-transparent bg-gray-900 text-gray-200 hover:bg-gray-950 dark:hover:bg-white dark:bg-gray-200 dark:text-gray-900 transition-colors ease-linear duration-900 px-4 py-1">
+            <button id="theme-toggle2" class="border-none rounded-lg border-transparent bg-gray-800 text-gray-200 hover:bg-gray-950 dark:hover:bg-white dark:bg-gray-300 dark:text-gray-900 transition-colors ease-linear duration-900 px-4 py-1">
               Escuro
             </button>
           </li>
@@ -286,7 +294,7 @@
         </section>
         -->
         <!-- Trilha do Profissional de TI -->
-        <section id="oprofissional" class="flex flex-col px-6">
+        <section id="lti" class="flex flex-col px-6">
           <div class="pt-36"></div>
           <h1 class="text-3xl font-bold mb-8 text-center">O Profissional de TI</h1>
 
@@ -324,7 +332,7 @@
         </section>
 
         <!-- Trilha dos Recursos Humanos -->
-        <section id="orh" class="flex flex-col px-6">
+        <section id="lrh" class="flex flex-col px-6">
           <div class="pt-36"></div>
           <h1 class="text-3xl font-bold mb-8 text-center">O meio de campo do RH</h1>
 
@@ -368,7 +376,7 @@
         </section>
 
         <!-- Trilha das Empresas -->
-        <section id="aempresa" class="flex flex-col px-6">
+        <section id="lgestao" class="flex flex-col px-6">
           <div class="pt-36"></div>
           <h1 class="text-3xl font-bold mb-8 text-center">A Gestão Empresarial</h1>
 
@@ -749,6 +757,12 @@
         }
     });
 
+    // Fecha o submenu ao rolar a página
+    window.addEventListener('scroll', () => {
+      const details = document.querySelector('details');
+      details.removeAttribute('open');
+    });
+
 
     document.addEventListener("DOMContentLoaded", function () {
         const container = document.getElementById("creditsContainer");
@@ -768,10 +782,9 @@
     });
 
     function showSection(sectionId) {
-        // Hide all sections with class 'section-content'
+
         document.querySelectorAll('.section-content').forEach(section => section.classList.add('hidden'));
 
-        // Show the selected section
         document.getElementById(sectionId).classList.remove('hidden');
     }
 
@@ -784,9 +797,6 @@
             }
         });
     });
-
-    // Show the first section by default
-    //showSection('hiperfoco');
 
     document.addEventListener('DOMContentLoaded', () => {
     const userLang = navigator.language || navigator.userLanguage;
@@ -816,16 +826,29 @@
     });
 
     const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeToggleBtn2 = document.getElementById('theme-toggle2');
     const currentTheme = localStorage.getItem('theme') || 'light';
 
     if (currentTheme === 'dark') {
       document.documentElement.classList.add('dark');
       themeToggleBtn.textContent = 'Claro';
+      themeToggleBtn2.textContent = 'Claro';
     }
 
     themeToggleBtn.addEventListener('click', () => {
       document.documentElement.classList.toggle('dark');
       const isDarkMode = document.documentElement.classList.contains('dark');
+      themeToggleBtn.textContent = isDarkMode ? 'Claro' : 'Escuro';
+      localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+      themeToggleBtn2.textContent = isDarkMode ? 'Claro' : 'Escuro';
+      localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+    });
+
+    themeToggleBtn2.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      const isDarkMode = document.documentElement.classList.contains('dark');
+      themeToggleBtn2.textContent = isDarkMode ? 'Claro' : 'Escuro';
+      localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
       themeToggleBtn.textContent = isDarkMode ? 'Claro' : 'Escuro';
       localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
     });
