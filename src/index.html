@@ -99,11 +99,15 @@
           </div>
         </details>
         <ul class="hidden md:flex space-x-4">
-          <li><a href="#projeto" class="pt-2 border-t-2 border-transparent text-gray-100 hover:border-white ease-linear duration-200">Projeto</a></li>
-          <li><a href="#intro" class="pt-2 border-t-2 border-transparent text-gray-100 hover:border-white ease-linear duration-200">Sobre o TDAH</a></li>
-          <li><a href="#creditos" class="pt-2 border-t-2 border-transparent text-gray-100 hover:border-white ease-linear duration-200">A Equipe</a></li>
-          <li><a href="#contato" class="pt-2 border-t-2 border-transparent text-gray-100 hover:border-white ease-linear duration-200">Contato</a></li>
-          <!--<li><a href="#pesquisa" class="hover:text-gray-300">Pesquisa</a></li>-->
+          <li class="pt-2"><a href="#projeto" class="pt-2 border-t-2 border-transparent text-gray-100 hover:border-white ease-linear duration-200">Projeto</a></li>
+          <li class="pt-2"><a href="#intro" class="pt-2 border-t-2 border-transparent text-gray-100 hover:border-white ease-linear duration-200">Sobre o TDAH</a></li>
+          <li class="pt-2"><a href="#creditos" class="pt-2 border-t-2 border-transparent text-gray-100 hover:border-white ease-linear duration-200">A Equipe</a></li>
+          <li class="py-2"><a href="#contato" class="pt-2 border-t-2 border-transparent text-gray-100 hover:border-white ease-linear duration-200">Contato</a></li>
+          <li class="py-1">
+            <button id="theme-toggle" class="border-none rounded-lg border-transparent bg-gray-900 text-gray-200 hover:bg-gray-950 dark:hover:bg-white dark:bg-gray-200 dark:text-gray-900 transition-colors ease-linear duration-900 px-4 py-1">
+              Escuro
+            </button>
+          </li>
         </ul>
       </div>
     </nav>
@@ -183,9 +187,9 @@
 
           <!-- Buttons to switch sections -->
           <div class="button-container mb-10 mt-10">
-            <button class="bg-white dark:bg-slate-800 text-purple-900 border-2 border-purple-900 hover:bg-purple-900 hover:text-white dark:border-purple-600 dark:text-purple-400 hover:dark:border-purple-400 px-4 py-2 rounded ease-linear duration-200 focus:dark:bg-purple-800 focus:dark:text-white focus:dark:border-purple-400" onclick="showSection('hiperfoco')">Hiperfoco</button>
-            <button class="bg-white dark:bg-slate-800 text-purple-900 border-2 border-purple-900 hover:bg-purple-900 hover:text-white dark:border-purple-600 dark:text-purple-400 hover:dark:border-purple-400 px-4 py-2 rounded ease-linear duration-200 focus:dark:bg-purple-800 focus:dark:text-white focus:dark:border-purple-400" onclick="showSection('criatividade')">Criatividade</button>
-            <button class="bg-white dark:bg-slate-800 text-purple-900 border-2 border-purple-900 hover:bg-purple-900 hover:text-white dark:border-purple-600 dark:text-purple-400 hover:dark:border-purple-400 px-4 py-2 rounded ease-linear duration-200 focus:dark:bg-purple-800 focus:dark:text-white focus:dark:border-purple-400" onclick="showSection('energia')">Energia</button>
+            <button class="bg-white dark:bg-slate-800 text-purple-900 border-2 border-purple-900 hover:bg-purple-900 hover:text-white dark:border-purple-600 dark:text-purple-400 hover:dark:border-purple-400 hover:dark:bg-purple-600 px-4 py-2 rounded ease-linear duration-200 focus:bg-purple-800 focus:text-white focus:border-purple-400 focus:dark:bg-purple-800 focus:dark:text-white focus:dark:border-purple-400" onclick="showSection('hiperfoco')">Hiperfoco</button>
+            <button class="bg-white dark:bg-slate-800 text-purple-900 border-2 border-purple-900 hover:bg-purple-900 hover:text-white dark:border-purple-600 dark:text-purple-400 hover:dark:border-purple-400 hover:dark:bg-purple-600 px-4 py-2 rounded ease-linear duration-200 focus:bg-purple-800 focus:text-white focus:border-purple-400 focus:dark:bg-purple-800 focus:dark:text-white focus:dark:border-purple-400" onclick="showSection('criatividade')">Criatividade</button>
+            <button class="bg-white dark:bg-slate-800 text-purple-900 border-2 border-purple-900 hover:bg-purple-900 hover:text-white dark:border-purple-600 dark:text-purple-400 hover:dark:border-purple-400 hover:dark:bg-purple-600 px-4 py-2 rounded ease-linear duration-200 focus:bg-purple-800 focus:text-white focus:border-purple-400 focus:dark:bg-purple-800 focus:dark:text-white focus:dark:border-purple-400" onclick="showSection('energia')">Energia</button>
           </div>
   
           <!-- Hiperfoco -->
@@ -456,28 +460,28 @@
             <div class="mt-10"></div>
             <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 
-                <div class="border bg-white dark:bg-slate-400 py-8 px-2 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+                <div class="border bg-white dark:border-gray-500 dark:bg-slate-400 py-8 px-2 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
                     <a href="https://www.unip.br/" target="_blank"><img src="./images/perfil/logo-unip.svg" alt="Foto" class="h-20 mx-auto"></a>
                    
                     <div class="flex justify-center mt-4">
                     </div>
                 </div>
                 
-                <div class="border bg-white dark:bg-slate-400 py-8 px-2 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+                <div class="border bg-white dark:border-gray-500 dark:bg-slate-400 py-8 px-2 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
                   <a href="https://www.mu.ong.br/" target="_blank"><img src="./images/perfil/muLogo.png" alt="Foto" class="h-20 mx-auto"></a>
                   
                   <div class="flex justify-center mt-4">
                   </div>
                 </div>
               <!--
-                <div class="border bg-white p-6 rounded-lg shadow-lg">
+                <div class="border bg-white dark:border-gray-500 p-6 rounded-lg shadow-lg">
                   <a href="" target="_blank"><img src="./images/perfil/" alt="Foto" class="w-24 h-24 rounded-full mx-auto"></a>
                   <h2 class="text-xl font-semibold mt-4 text-center"></h2>
                   <p class="text-gray-600 text-center"></p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:rasmill@hotmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-2">Email</a>
-                      <a href="https://www.linkedin.com/in/renato-alves-47032aa0" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-2">LinkedIn</a>
-                      <a href="https://lattes.cnpq.br" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-2 invisible">Lattes</a>
+                      <a href="mailto:rasmill@hotmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-2">Email</a>
+                      <a href="https://www.linkedin.com/in/renato-alves-47032aa0" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-2">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-2 invisible">Lattes</a>
                   </div>
                 </div>
                -->
@@ -492,47 +496,47 @@
             <div class="mt-10"></div>
             <div class="grid gap-6 grid-cols-1 sm:grid-cols-2">
                 
-                <div class="border bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+                <div class="border bg-white dark:border-gray-500 dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
                     <img src="./images/perfil/Eduarda-Regina.jpeg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
                     <h2 class="text-xl font-semibold mt-4 text-center">Professora Drª Eduarda Regina Carvalho</h2>
                     <p class="text-slate-800 dark:text-slate-300 text-center">Coordenadora de Engenharia e Computação - Unip Araraquara</p>
                     <div class="flex justify-center mt-4">
-                        <a href="mailto:carvalho_eduarda@ymail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">Email</a>
-                        <a href="https://www.linkedin.com/in/eduardarcarvalho" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">LinkedIn</a>
-                        <a href="http://lattes.cnpq.br/5292233426713160" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">Lattes</a>
+                        <a href="mailto:carvalho_eduarda@ymail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">Email</a>
+                        <a href="https://www.linkedin.com/in/eduardarcarvalho" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">LinkedIn</a>
+                        <a href="http://lattes.cnpq.br/5292233426713160" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">Lattes</a>
                     </div>
                 </div>
                 
-                <div class="border bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+                <div class="border bg-white dark:border-gray-500 dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
                   <img src="./images/perfil/Oliver-Zancul.jpeg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
                   <h2 class="text-xl font-semibold mt-4 text-center">Professor MSc Oliver Zancul Prado</h2>
                   <p class="text-slate-800 dark:text-slate-300 text-center">Coordenador de Psicologia - Unip Araraquara</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:oliver.prado@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">Email</a>
-                      <a href="https://www.linkedin.com/in/oliver-zancul-prado-a9b38035" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">LinkedIn</a>
-                      <a href="http://lattes.cnpq.br/7180556718230160" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">Lattes</a>
+                      <a href="mailto:oliver.prado@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">Email</a>
+                      <a href="https://www.linkedin.com/in/oliver-zancul-prado-a9b38035" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">LinkedIn</a>
+                      <a href="http://lattes.cnpq.br/7180556718230160" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">Lattes</a>
                   </div>
                 </div>
               
-                <div class="border bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+                <div class="border bg-white dark:border-gray-500 dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
                   <img src="./images/perfil/Renato-Alves.jpg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
                   <h2 class="text-xl font-semibold mt-4 text-center">Renato Alves<sup>.'.</sup></h2>
                   <p class="text-slate-800 dark:text-slate-300 text-center">Diretor da ONG Mosaic Universe</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:rasmill@hotmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">Email</a>
-                      <a href="https://www.linkedin.com/in/renato-alves-47032aa0" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">LinkedIn</a>
-                      <a href="https://lattes.cnpq.br" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200 invisible">Lattes</a>
+                      <a href="mailto:rasmill@hotmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">Email</a>
+                      <a href="https://www.linkedin.com/in/renato-alves-47032aa0" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200 invisible">Lattes</a>
                   </div>
                 </div>
                
-                <div class="border bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+                <div class="border bg-white dark:border-gray-500 dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
                   <img src="./images/perfil/Miguel-Moroni.jpg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
                   <h2 class="text-xl font-semibold mt-4 text-center">Miguel Moroni</h2>
                   <p class="text-slate-800 dark:text-slate-300 text-center">Aluno e Líder do Projeto</p>
                   <div class="flex justify-center mt-4">
-                      <a href="mailto:miguelmcontato@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">Email</a>
-                      <a href="https://www.linkedin.com/in/migmoroni" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">LinkedIn</a>
-                      <a href="https://lattes.cnpq.br" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 invisible ease-linear duration-200">Lattes</a>
+                      <a href="mailto:miguelmcontato@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">Email</a>
+                      <a href="https://www.linkedin.com/in/migmoroni" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">LinkedIn</a>
+                      <a href="https://lattes.cnpq.br" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 invisible ease-linear duration-200">Lattes</a>
                   </div>
                 </div>
             </div>
@@ -549,113 +553,113 @@
         <div class="mt-14"></div>
         <div id="creditsContainer" class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
 
-            <div class="creditCard border bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+            <div class="creditCard border dark:border-gray-500 bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
                 <img src="./images/perfil/Felipe-Oliveira.jpeg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
                 <h2 class="text-xl font-semibold mt-4 text-center">Felipe Oliveira</h2>
                 <p class="text-slate-800 dark:text-slate-300 text-center">Computação<br>Desenvolvimento</p>
                 <div class="flex justify-center mt-4">
-                    <a href="mailto:felipe_petronillo@hotmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">Email</a>
-                    <a href="https://www.linkedin.com/in/felipe-oliveira-6b83a9268" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">LinkedIn</a>
+                    <a href="mailto:felipe_petronillo@hotmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">Email</a>
+                    <a href="https://www.linkedin.com/in/felipe-oliveira-6b83a9268" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">LinkedIn</a>
                 </div>
             </div>
 
-            <div class="creditCard border bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+            <div class="creditCard border dark:border-gray-500 bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
               <img src="./images/perfil/Gabriel-Carrascosa.jpeg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
               <h2 class="text-xl font-semibold mt-4 text-center">Gabriel Carrascosa</h2>
               <p class="text-slate-800 dark:text-slate-300 text-center">Computação<br>Edição de Video</p>
               <div class="flex justify-center mt-4">
-                  <a href="mailto:bielcarrascosa@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">Email</a>
-                  <a href="https://www.linkedin.com/in/gabriel-carrascosa-9518bb286/" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">LinkedIn</a>
+                  <a href="mailto:bielcarrascosa@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">Email</a>
+                  <a href="https://www.linkedin.com/in/gabriel-carrascosa-9518bb286/" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">LinkedIn</a>
               </div>
             </div>
 
-            <div class="creditCard border bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+            <div class="creditCard border dark:border-gray-500 bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
               <img src="./images/perfil/Victor-Hartung.jpeg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
               <h2 class="text-xl font-semibold mt-4 text-center">Victor Hartung </h2>
               <p class="text-slate-800 dark:text-slate-300 text-center">Computação<br>Desenvolvimento</p>
               <div class="flex justify-center mt-4">
-                  <a href="mailto:victoralexhartung@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">Email</a>
-                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200 invisible">LinkedIn</a>
+                  <a href="mailto:victoralexhartung@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">Email</a>
+                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200 invisible">LinkedIn</a>
               </div>
             </div>
 
-            <div class="creditCard border bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+            <div class="creditCard border dark:border-gray-500 bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
               <img src="./images/perfil/Kuen.jpeg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
               <h2 class="text-xl font-semibold mt-4 text-center">Kundherlly Xavier</h2>
               <p class="text-slate-800 dark:text-slate-300 text-center">Computação<br>Pesquisa e Roteiro</p>
               <div class="flex justify-center mt-4">
-                  <a href="mailto:email1@example.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200 invisible">Email</a>
-                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200 invisible">LinkedIn</a>
+                  <a href="mailto:email1@example.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200 invisible">Email</a>
+                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200 invisible">LinkedIn</a>
               </div>
             </div>
 
-            <div class="creditCard border bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+            <div class="creditCard border dark:border-gray-500 bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
               <img src="./images/perfil/Luana.jpeg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
               <h2 class="text-xl font-semibold mt-4 text-center">Luana Schwartz</h2>
               <p class="text-slate-800 dark:text-slate-300 text-center">Computação<br>Pesquisa e Roteiro</p>
               <div class="flex justify-center mt-4">
-                  <a href="mailto:luana.schwartz2@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">Email</a>
-                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200 invisible">LinkedIn</a>
+                  <a href="mailto:luana.schwartz2@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">Email</a>
+                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200 invisible">LinkedIn</a>
               </div>
             </div>
 
-            <div class="creditCard border bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+            <div class="creditCard border dark:border-gray-500 bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
               <img src="./images/perfil/Juliana.jpeg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
               <h2 class="text-xl font-semibold mt-4 text-center">Juliana Teixeira</h2>
               <p class="text-slate-800 dark:text-slate-300 text-center">Computação<br>Pesquisa e Roteiro</p>
               <div class="flex justify-center mt-4">
-                  <a href="mailto:juulianact27@outlook.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">Email</a>
-                  <a href="https://www.linkedin.com/in/juliana-teixeira-76a0b1295" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">LinkedIn</a>
+                  <a href="mailto:juulianact27@outlook.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">Email</a>
+                  <a href="https://www.linkedin.com/in/juliana-teixeira-76a0b1295" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">LinkedIn</a>
               </div>
             </div>
 
-            <div class="creditCard border bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+            <div class="creditCard border dark:border-gray-500 bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
               <img src="./images/perfil/pessoa.png" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
               <h2 class="text-xl font-semibold mt-4 text-center">Luan Baptista</h2>
               <p class="text-slate-800 dark:text-slate-300 text-center">Computação<br>Desenvolvimento</p>
               <div class="flex justify-center mt-4">
-                  <a href="mailto:luanbap123@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">Email</a>
-                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200 invisible">LinkedIn</a>
+                  <a href="mailto:luanbap123@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">Email</a>
+                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200 invisible">LinkedIn</a>
               </div>
             </div>
 
-            <div class="creditCard border bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+            <div class="creditCard border dark:border-gray-500 bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
               <img src="./images/perfil/pessoa.png" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
               <h2 class="text-xl font-semibold mt-4 text-center">Gabriel Guerguti</h2>
               <p class="text-slate-800 dark:text-slate-300 text-center">Computação<br>Desenvolvimento</p>
               <div class="flex justify-center mt-4">
-                  <a href="mailto:email1@example.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200 invisible">Email</a>
-                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200 invisible">LinkedIn</a>
+                  <a href="mailto:email1@example.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200 invisible">Email</a>
+                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200 invisible">LinkedIn</a>
               </div>
             </div>
 
-            <div class="creditCard border bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+            <div class="creditCard border dark:border-gray-500 bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
               <img src="./images/perfil/William-Matheus.jpeg" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
               <h2 class="text-xl font-semibold mt-4 text-center">William da Silva</h2>
               <p class="text-slate-800 dark:text-slate-300 text-center">Psicologia<br>Embasamento teórico</p>
               <div class="flex justify-center mt-4">
-                  <a href="mailto:matheusw261@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">Email</a>
-                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200 invisible">LinkedIn</a>
+                  <a href="mailto:matheusw261@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">Email</a>
+                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200 invisible">LinkedIn</a>
               </div>
             </div>
 
-            <div class="creditCard border bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+            <div class="creditCard border dark:border-gray-500 bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
               <img src="./images/perfil/pessoa.png" alt="Foto" class="w-24 h-24 rounded-full mx-auto ">
               <h2 class="text-xl font-semibold mt-4 text-center">Gabriela Medeiros</h2>
               <p class="text-slate-800 dark:text-slate-300 text-center">Psicologia<br>Embasamento teórico</p>
               <div class="flex justify-center mt-4">
-                  <a href="mailto:medeirosgabriela26@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">Email</a>
-                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200 invisible">LinkedIn</a>
+                  <a href="mailto:medeirosgabriela26@gmail.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">Email</a>
+                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200 invisible">LinkedIn</a>
               </div>
             </div>
 
-            <div class="creditCard border bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
+            <div class="creditCard border dark:border-gray-500 bg-white dark:bg-slate-950 dark:text-slate-200 p-6 rounded-lg shadow-lg hover:shadow-purple-300 ease-linear duration-200">
               <img src="./images/perfil/pessoa.png" alt="Foto" class="w-24 h-24 rounded-full mx-auto">
               <h2 class="text-xl font-semibold mt-4 text-center">Maria Eduarda</h2>
               <p class="text-slate-800 dark:text-slate-300 text-center">Psicologia<br>Embasamento teórico</p>
               <div class="flex justify-center mt-4">
-                  <a href="mailto:email1@example.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200 invisible">Email</a>
-                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200 invisible">LinkedIn</a>
+                  <a href="mailto:email1@example.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200 invisible">Email</a>
+                  <a href="https://www.linkedin.com" target="_blank" class="border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200 invisible">LinkedIn</a>
               </div>
             </div>
         </div>
@@ -672,7 +676,7 @@
           <h3 class="text-center mt-56 text-2xl">Obrigado por participar até aqui!</h3>
           <p class="text-justify mt-4 text-lg mx-10">Caso tenha sugestões ou contribuições adicionais, será uma alegria ouvi-lo(a). Fale com Miguel Moroni, por meio dos links a seguir:</p>
           <div class="flex justify-center mt-8">
-            <a href="mailto:miguelmcontato@gmail.com" target="_blank" class="flex items-center border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">
+            <a href="mailto:miguelmcontato@gmail.com" target="_blank" class="flex items-center border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
               </svg>
@@ -680,7 +684,7 @@
                 miguelmcontato@gmail.com
               </div>
             </a>
-            <a href="tel:+5516997260111" target="_blank" class="flex items-center border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 hover:border-transparent mx-3 ease-linear duration-200">
+            <a href="tel:+5516997260111" target="_blank" class="flex items-center border-b-2 border-transparent text-purple-900 hover:border-purple-900 dark:text-purple-400 hover:dark:border-purple-400 mx-3 ease-linear duration-200">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
                 <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
               </svg>
@@ -810,6 +814,22 @@
         }
     }
     });
+
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme') || 'light';
+
+    if (currentTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+      themeToggleBtn.textContent = 'Claro';
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      const isDarkMode = document.documentElement.classList.contains('dark');
+      themeToggleBtn.textContent = isDarkMode ? 'Claro' : 'Escuro';
+      localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+    });
+
     </script>
     <!--
     <script type="module" src="./main.js"></script>
