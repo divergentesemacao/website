@@ -3,7 +3,7 @@ export default{
     build: {
         outDir: '../dist',
     },
-    base: "/website/",
+    base: "/",
 };
 
 /*
